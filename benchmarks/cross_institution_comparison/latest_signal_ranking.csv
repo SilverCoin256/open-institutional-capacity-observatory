@@ -1,0 +1,5 @@
+rank,institution_id,period,signal_type,signal
+1,cfpb,2025-12,sedi,0.797226
+2,sec,2024,sedi,0.276331
+3,uscis,FY2021Q4,qai,0.017869
+4,eoir,2026,qai,-0.381876

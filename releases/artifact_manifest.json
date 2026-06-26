@@ -1,0 +1,127 @@
+{
+  "artifacts": [
+    {
+      "bytes": 4035,
+      "path": "README.md",
+      "sha256": "bf848c49e0d2b663551f081ceb7acd73898031fc4a1e79dc7a3a40404b7bd046"
+    },
+    {
+      "bytes": 1110,
+      "path": "LICENSE",
+      "sha256": "37f466a330f48cee170249f67c26a7a58c17ddd39c241c9fbde6386887e1edb9"
+    },
+    {
+      "bytes": 916,
+      "path": "LICENSE-DATA",
+      "sha256": "b8ee68a4ceaa0cfb2544746b0ab719d5e22dd467fed222eea9cbf43a9a65f9f5"
+    },
+    {
+      "bytes": 587,
+      "path": "CITATION.cff",
+      "sha256": "ba165b53de427937f1b3c71e22dcd149c8c30e2ec5f8ee0d9378a6ae75463553"
+    },
+    {
+      "bytes": 681,
+      "path": "codemeta.json",
+      "sha256": "aa17921a7c32eb4efc0f0e5bd59a23154272dd26f10687eb44e10817a69df7dc"
+    },
+    {
+      "bytes": 3722,
+      "path": "datasets/manifests/dataset_manifest.json",
+      "sha256": "2cfaaf181c2eb2c9952769c9313b5ed76b895bfc3a0d54d6ef12bae43d2de49e"
+    },
+    {
+      "bytes": 2078,
+      "path": "datasets/checksums/sha256sums.txt",
+      "sha256": "cdca606c4f11c2d5ee881babf025209513c768da5f90ee4ec9d34b49c9a90f94"
+    },
+    {
+      "bytes": 2687,
+      "path": "datasets/metadata/license_review.md",
+      "sha256": "a2024c731da2f3f784d3cad970948061400cf89bfb290a819fbde0e3c6700d90"
+    },
+    {
+      "bytes": 580,
+      "path": "datasets/validation_reports/data_validation_report.json",
+      "sha256": "72d8cf216d7b114c57fdcbfb5d0a249ae7498159ab300ca9aa2cccd4e777a75c"
+    },
+    {
+      "bytes": 2431,
+      "path": "benchmarks/benchmark_results.json",
+      "sha256": "bbcab09897ba0464dd1d64f762cdae8349e9fc6dccb21d395e8129529823d4e4"
+    },
+    {
+      "bytes": 16742,
+      "path": "benchmarks/frozen_splits.csv",
+      "sha256": "2580e5cb632387a5e8bfcc18d77da9bb8ae37aabff846aa7f1240495cc9ae61a"
+    },
+    {
+      "bytes": 714,
+      "path": "benchmarks/leaderboard_spec.md",
+      "sha256": "283151e76d66e3f0dc875043f48c1f30103b39059f3281fb43f047d44941d97f"
+    },
+    {
+      "bytes": 1273,
+      "path": "figures/gallery/FIGURE_MANIFEST.md",
+      "sha256": "cc370c799c0de2e965d84cd3183bb31ddebc66b33b543d776ef6763a2fd133ce"
+    },
+    {
+      "bytes": 1092,
+      "path": "notebooks/01_reproduce_and_inspect.ipynb",
+      "sha256": "33c8b946fe5a7fe95032f1cdc76567d44260492613ae0ada1006600148e679a4"
+    },
+    {
+      "bytes": 1196,
+      "path": "notebooks/02_metric_examples.ipynb",
+      "sha256": "91c62e1013022bfc1209bfc423cf908172b853df1a51ec6add6b0159e5938be8"
+    },
+    {
+      "bytes": 1252,
+      "path": "notebooks/03_research_showcase.ipynb",
+      "sha256": "cb8dd540e448562db7399dfa1d38afed564a4537b0916bc1367782ffba72d5ab"
+    },
+    {
+      "bytes": 1350,
+      "path": "notebooks/04_replication_walkthrough.ipynb",
+      "sha256": "0e75585af50f6eac17bb95d0de54a688b9f8a523bf5a657d35d01843310f677a"
+    },
+    {
+      "bytes": 1063,
+      "path": "notebooks/05_five_minute_demo.ipynb",
+      "sha256": "c70fa54e7d338278dec51673ba586316019b193260a53073097c7b474264e64f"
+    },
+    {
+      "bytes": 8058,
+      "path": "docs/release/release_candidate_report.md",
+      "sha256": "56baace3156953a0c9dafb06aed841815cb6a17ecc9de63cec2225a0cd806dfa"
+    },
+    {
+      "bytes": 1988,
+      "path": "releases/RELEASE_CHECKLIST.md",
+      "sha256": "e85c552c85bb3292c3850150772e5f568bd632c3637f584843bc9416daa98603"
+    },
+    {
+      "bytes": 693,
+      "path": "releases/github/RELEASE_NOTES.md",
+      "sha256": "0f9a7b3372ba3038070bc47c521f239c85019e7e96cbbc5f3aca1be4760e7c90"
+    },
+    {
+      "bytes": 846,
+      "path": "releases/github/reproduction_report.json",
+      "sha256": "d1610fab53bebc79c384ae90656f32fd29e931d33acd672b64cec02c0d498fcf"
+    },
+    {
+      "bytes": 92871,
+      "path": "releases/github/oico-1.0.0-rc1.tar.gz",
+      "sha256": "1404f2971302ea526d4340dc40eab2f185b37cfb55d3ee280b606011941d1d2f"
+    },
+    {
+      "bytes": 88,
+      "path": "releases/github/oico-1.0.0-rc1.tar.gz.sha256",
+      "sha256": "e25f8857843f250b8468bf343fdd7fd3d5b9bd71e55a315f614df22e46e287fd"
+    }
+  ],
+  "generated_at_utc": "2026-07-01T00:00:00+00:00",
+  "name": "Open Institutional Capacity Observatory release artifacts",
+  "version": "1.0.0-rc1"
+}

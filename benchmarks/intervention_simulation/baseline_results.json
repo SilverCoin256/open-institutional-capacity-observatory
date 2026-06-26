@@ -1,0 +1,9 @@
+{
+  "baseline": "Deterministic scenario grid plus seeded procedural-risk simulation.",
+  "evaluation_metric": "mean_quality_and_mean_failure_risk",
+  "limitations": "Synthetic benchmark only; parameters are not calibrated to a live institution.",
+  "mean_authorization_quality": 0.509715,
+  "mean_procedural_failure_risk": 0.222747,
+  "problem_statement": "Compare simple capacity and quality interventions under authorization saturation.",
+  "task": "intervention_simulation"
+}

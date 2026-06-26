@@ -1,0 +1,49 @@
+{
+  "results": [
+    {
+      "baseline": "Persistence baseline: QAI_t_hat = QAI_{t-1}.",
+      "evaluation_metric": "mean_absolute_error",
+      "limitations": "Small v1 sample; intended as a format and baseline, not a leaderboard-quality forecasting corpus.",
+      "mean_absolute_error": 0.198706,
+      "n_test_observations": 19,
+      "problem_statement": "Predict next-period QAI from public workload history.",
+      "task": "queue_forecasting"
+    },
+    {
+      "accuracy": 0.819767,
+      "baseline": "Threshold SEDI at 0.5 against institution-specific median proxy labels.",
+      "evaluation_metric": "accuracy_against_proxy_labels",
+      "limitations": "Labels are proxy labels derived from SEDI distribution, not independent ground truth.",
+      "n_test_observations": 172,
+      "problem_statement": "Detect high-degradation periods from public institutional indicators.",
+      "task": "saturation_detection"
+    },
+    {
+      "baseline": "Deterministic scenario grid plus seeded procedural-risk simulation.",
+      "evaluation_metric": "mean_quality_and_mean_failure_risk",
+      "limitations": "Synthetic benchmark only; parameters are not calibrated to a live institution.",
+      "mean_authorization_quality": 0.509715,
+      "mean_procedural_failure_risk": 0.222747,
+      "problem_statement": "Compare simple capacity and quality interventions under authorization saturation.",
+      "task": "intervention_simulation"
+    },
+    {
+      "baseline": "Median training-set total ASI score.",
+      "evaluation_metric": "mean_absolute_error",
+      "limitations": "V1 corpus is small and useful mainly for codebook testing and teaching; text-feature baselines require source-text licensing review.",
+      "mean_absolute_error": 3.2,
+      "n_test": 5,
+      "n_train": 18,
+      "problem_statement": "Predict total ASI score from held-out document metadata or text features.",
+      "task": "accountability_specificity"
+    },
+    {
+      "baseline": "Rank the latest available QAI or SEDI signal within each institution.",
+      "evaluation_metric": "descriptive_ranking_only",
+      "limitations": "QAI and SEDI are not directly commensurate; ranking is for interface testing, not substantive comparison.",
+      "n_institutions": 4,
+      "problem_statement": "Produce a transparent, versioned stress-signal ranking across available public series.",
+      "task": "cross_institution_comparison"
+    }
+  ]
+}

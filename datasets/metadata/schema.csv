@@ -1,0 +1,54 @@
+table,field,dtype,nullable,description
+institutions,institution_id,string,False,Stable OICO identifier.
+institutions,name,string,False,Human-readable institution name.
+institutions,jurisdiction,string,False,Primary jurisdiction represented by the dataset.
+institutions,sector,string,False,"Public, private, higher education, or mixed sector."
+institutions,domain,string,False,Research domain represented by the institution.
+institutions,unit_of_observation,string,False,Primary analytical unit available in v1.
+institutions,source_dataset_id,string,False,Dataset family that introduced the institution.
+queue_observations,observation_id,string,False,Stable row identifier.
+queue_observations,institution_id,string,False,Foreign key to institutions.csv.
+queue_observations,period,string,False,"Reported fiscal year, quarter, month, or date label."
+queue_observations,period_start,string,True,ISO-style start date where inferable.
+queue_observations,period_end,string,True,ISO-style end date where inferable.
+queue_observations,pending,integer,False,Cases/items pending at the reporting boundary.
+queue_observations,received,integer,True,Cases/items received during the period.
+queue_observations,completed,integer,True,Cases/items completed during the period.
+queue_observations,qai,number,True,Queue Acceleration Index recomputed by OICO.
+queue_observations,source_qai,number,True,QAI value inherited from the source snapshot.
+queue_observations,qai_delta,number,True,Difference between recomputed and inherited QAI.
+queue_observations,quality_flags,string,False,Pipe-separated validation notes.
+queue_observations,source_dataset_id,string,False,Source dataset family.
+institutional_indicators,observation_id,string,False,Stable row identifier.
+institutional_indicators,institution_id,string,False,Foreign key to institutions.csv.
+institutional_indicators,period,string,False,Reported period.
+institutional_indicators,indicator_family,string,False,"CFPB, SEC, or other indicator family."
+institutional_indicators,volume,number,False,Observed public workload volume.
+institutional_indicators,operational_rate,number,True,Public operational-throughput or timeliness rate.
+institutional_indicators,substantive_rate,number,True,Outcome-quality proxy rate.
+institutional_indicators,review_intensity,number,True,Review output divided by review base.
+institutional_indicators,sedi,number,True,Saturation/erosion degradation index recomputed by OICO.
+institutional_indicators,quality_flags,string,False,Pipe-separated validation notes.
+institutional_indicators,source_dataset_id,string,False,Source dataset family.
+asi_scores,document_id,string,False,ASI corpus document identifier.
+asi_scores,institution_name,string,False,Institution or source body named in the corpus.
+asi_scores,institution_category,string,False,Corpus category.
+asi_scores,sector,string,False,Sector label from the corpus manifest.
+asi_scores,jurisdiction,string,False,Jurisdiction label from the corpus manifest.
+asi_scores,document_title,string,False,Document title.
+asi_scores,document_type,string,False,Source document type.
+asi_scores,document_stratum,string,False,Corpus stratum.
+asi_scores,domain,string,False,Policy or governance domain.
+asi_scores,published_or_updated_date,string,True,Publication/update date when known.
+asi_scores,source_url,string,True,Official source URL recorded in the corpus manifest.
+asi_scores,total_asi_score,integer,False,"Recomputed total ASI score, 0-16."
+asi_scores,coding_confidence,string,False,Coder confidence label.
+asi_scores,quality_flags,string,False,Pipe-separated validation notes.
+metric_catalog,metric_id,string,False,Stable metric identifier.
+metric_catalog,name,string,False,Metric name.
+metric_catalog,definition,string,False,Formal definition.
+metric_catalog,mathematical_intuition,string,False,Short intuition for the computation.
+metric_catalog,assumptions,string,False,Pipe-separated assumptions.
+metric_catalog,limitations,string,False,Pipe-separated limitations.
+metric_catalog,failure_modes,string,False,Pipe-separated failure modes.
+metric_catalog,expected_misuse,string,False,Known misuse to avoid.

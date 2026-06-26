@@ -1,0 +1,9 @@
+{
+  "baseline": "Persistence baseline: QAI_t_hat = QAI_{t-1}.",
+  "evaluation_metric": "mean_absolute_error",
+  "limitations": "Small v1 sample; intended as a format and baseline, not a leaderboard-quality forecasting corpus.",
+  "mean_absolute_error": 0.198706,
+  "n_test_observations": 19,
+  "problem_statement": "Predict next-period QAI from public workload history.",
+  "task": "queue_forecasting"
+}

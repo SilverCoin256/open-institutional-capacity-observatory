@@ -1,0 +1,9 @@
+{
+  "accuracy": 0.819767,
+  "baseline": "Threshold SEDI at 0.5 against institution-specific median proxy labels.",
+  "evaluation_metric": "accuracy_against_proxy_labels",
+  "limitations": "Labels are proxy labels derived from SEDI distribution, not independent ground truth.",
+  "n_test_observations": 172,
+  "problem_statement": "Detect high-degradation periods from public institutional indicators.",
+  "task": "saturation_detection"
+}

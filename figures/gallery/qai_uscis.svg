@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="420" viewBox="0 0 760 420">
+
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, Segoe UI, sans-serif; fill: #1f2933; }
+      .subtitle { font: 13px system-ui, -apple-system, Segoe UI, sans-serif; fill: #52606d; }
+      .axis { font: 12px system-ui, -apple-system, Segoe UI, sans-serif; fill: #52606d; }
+      .label { font: 11px system-ui, -apple-system, Segoe UI, sans-serif; fill: #334e68; }
+      .grid { stroke: #d9e2ec; stroke-width: 1; }
+      .line { fill: none; stroke: #0f609b; stroke-width: 3; }
+      .line2 { fill: none; stroke: #b83280; stroke-width: 3; }
+      .bar { fill: #2f855a; }
+      .bar2 { fill: #9f580a; }
+      .point { fill: #0f609b; stroke: #fff; stroke-width: 2; }
+    </style>
+    
+<text x="24.0" y="32.0" class="title" text-anchor="start">USCIS Queue Acceleration Index</text>
+<text x="24.0" y="52.0" class="subtitle" text-anchor="start">Quarterly snapshot using inherited public workload data.</text>
+<line x1="72" y1="72.0" x2="724" y2="72.0" class="grid"/>
+<line x1="72" y1="141.5" x2="724" y2="141.5" class="grid"/>
+<line x1="72" y1="211.0" x2="724" y2="211.0" class="grid"/>
+<line x1="72" y1="280.5" x2="724" y2="280.5" class="grid"/>
+<line x1="72" y1="350.0" x2="724" y2="350.0" class="grid"/>
+<polyline points="72.0,242.9 137.2,72.7 202.4,84.0 267.6,87.2 332.8,85.0 398.0,83.0 463.2,80.8 528.4,78.7 593.6,76.5 658.8,74.3 724.0,72.0" class="line"/>
+<circle cx="72.0" cy="242.9" r="4.5" class="point"/>
+<circle cx="137.2" cy="72.7" r="4.5" class="point"/>
+<circle cx="202.4" cy="84.0" r="4.5" class="point"/>
+<circle cx="267.6" cy="87.2" r="4.5" class="point"/>
+<circle cx="332.8" cy="85.0" r="4.5" class="point"/>
+<circle cx="398.0" cy="83.0" r="4.5" class="point"/>
+<circle cx="463.2" cy="80.8" r="4.5" class="point"/>
+<circle cx="528.4" cy="78.7" r="4.5" class="point"/>
+<circle cx="593.6" cy="76.5" r="4.5" class="point"/>
+<circle cx="658.8" cy="74.3" r="4.5" class="point"/>
+<circle cx="724.0" cy="72.0" r="4.5" class="point"/>
+<line x1="72" y1="350.0" x2="724" y2="350.0" stroke="#9aa5b1" stroke-dasharray="5 4"/>
+<text x="24.0" y="211.0" class="axis" text-anchor="start">QAI</text>
+<text x="72.0" y="386.0" class="axis" text-anchor="middle">FY2019Q2</text>
+<text x="137.2" y="386.0" class="axis" text-anchor="middle">FY2019Q3</text>
+<text x="202.4" y="386.0" class="axis" text-anchor="middle">FY2019Q4</text>
+<text x="267.6" y="386.0" class="axis" text-anchor="middle">FY2020Q1</text>
+<text x="332.8" y="386.0" class="axis" text-anchor="middle">FY2020Q2</text>
+<text x="398.0" y="386.0" class="axis" text-anchor="middle">FY2020Q3</text>
+<text x="463.2" y="386.0" class="axis" text-anchor="middle">FY2020Q4</text>
+<text x="528.4" y="386.0" class="axis" text-anchor="middle">FY2021Q1</text>
+<text x="593.6" y="386.0" class="axis" text-anchor="middle">FY2021Q2</text>
+<text x="658.8" y="386.0" class="axis" text-anchor="middle">FY2021Q3</text>
+<text x="724.0" y="386.0" class="axis" text-anchor="middle">FY2021Q4</text>
+</svg>

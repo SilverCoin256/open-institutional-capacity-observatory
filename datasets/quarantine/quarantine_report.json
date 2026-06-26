@@ -1,0 +1,6 @@
+{
+  "policy": "Rows with schema errors, duplicate stable identifiers, impossible metric ranges, or corrupted source hashes must be quarantined rather than silently repaired.",
+  "quarantined_issue_count": 0,
+  "quarantined_issues": [],
+  "status": "no_quarantined_rows"
+}

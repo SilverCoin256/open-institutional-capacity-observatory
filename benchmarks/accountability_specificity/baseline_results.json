@@ -1,0 +1,10 @@
+{
+  "baseline": "Median training-set total ASI score.",
+  "evaluation_metric": "mean_absolute_error",
+  "limitations": "V1 corpus is small and useful mainly for codebook testing and teaching; text-feature baselines require source-text licensing review.",
+  "mean_absolute_error": 3.2,
+  "n_test": 5,
+  "n_train": 18,
+  "problem_statement": "Predict total ASI score from held-out document metadata or text features.",
+  "task": "accountability_specificity"
+}

@@ -1,0 +1,6 @@
+institution_id,name,jurisdiction,sector,domain,unit_of_observation,source_dataset_id
+eoir,Executive Office for Immigration Review,United States,public,immigration adjudication,fiscal year,eoir_workload_annual
+uscis,U.S. Citizenship and Immigration Services,United States,public,immigration benefits adjudication,fiscal quarter,uscis_workload_quarterly
+cfpb,Consumer Financial Protection Bureau,United States,public,consumer complaint processing,month,cfpb_complaints_monthly
+sec,U.S. Securities and Exchange Commission,United States,public,corporate disclosure review,calendar year,sec_edgar_yearly
+asi_corpus,Accountability Specificity Index document corpus,mixed,mixed,AI governance documentation,policy or terms document,asi_document_corpus_manifest

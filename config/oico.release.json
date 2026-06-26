@@ -1,0 +1,8 @@
+{
+  "project": "Open Institutional Capacity Observatory",
+  "version": "1.0.0-rc1",
+  "raw_snapshot_policy": "frozen",
+  "live_fetch_required": false,
+  "requires_private_credentials": false,
+  "benchmark_policy": "baseline_and_teaching_only_until_independent_labels_exist"
+}

@@ -1,0 +1,15 @@
+OICO dataset metadata, codebooks, manifests, and derived tabular outputs are
+released under Creative Commons Attribution 4.0 International (CC BY 4.0),
+except where an upstream source requires different handling.
+
+Underlying public records retain their source terms:
+
+- EOIR workload and adjudication statistics: U.S. Department of Justice public information.
+- USCIS reports and studies: U.S. government public information.
+- CFPB Consumer Complaint Database aggregates: public CFPB data.
+- SEC EDGAR-derived annual counts: U.S. government public information.
+- ASI governance-document metadata: source-specific public web documents; redistributed here as metadata and coded scores, not full source-text archive.
+
+Users must inspect `datasets/metadata/source_register.csv` before redistributing
+any source-specific material. The evidence and remaining caveats are recorded in
+`datasets/metadata/license_review.md`.
