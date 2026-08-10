@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Three-command reproduction protocol for the OICO flagship EOIR analysis.">
+  <link rel="canonical" href="https://silvercoin256.github.io/open-institutional-capacity-observatory/reproduce/">
+  <title>Reproduce OICO | Open Institutional Capacity Observatory</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header><nav><a class="brand" href="../index.html">OICO</a><a href="../examples.html">Flagship case</a><a href="../break.html">Break OICO</a><a href="../citation.html">Citation</a></nav></header>
+  <main>
+    <p class="eyebrow">Independent reproduction</p>
+    <h1>Reproduce the flagship result</h1>
+    <p class="lede">The v1.0.0 protocol rebuilds the tracked EOIR outputs, verifies the frozen inputs, and writes a machine-readable report. It is designed for a clean checkout rather than a trusted local state.</p>
+    <section>
+      <h2>Three commands after environment setup</h2>
+      <pre><code>python -m pip install -e .
+oico reproduce
+python -m unittest discover -s tests</code></pre>
+      <p>Expected runtime is short on a current laptop. The reproduction command writes <code>examples/flagship/outputs/flagship_report.json</code> and the canonical EOIR table and figure.</p>
+    </section>
+    <section>
+      <h2>What to compare</h2>
+      <ul>
+        <li>EOIR pending matters: 826,488 in 2016 and 3,925,351 at the 2024 peak.</li>
+        <li>QAI: positive in all eight comparable annual periods from 2017 through 2024, reaching approximately 1.580 in 2024.</li>
+        <li>Artifact checksums and input provenance in the release manifests.</li>
+      </ul>
+      <p class="boundary"><strong>Interpretation:</strong> the result is a descriptive signal of backlog growth relative to recorded completions in a frozen snapshot. It does not estimate staffing capacity, causality, intent, legal compliance, or institutional quality.</p>
+    </section>
+    <section>
+      <h2>Report your attempt</h2>
+      <p>Record your release, operating system, Python version, commands, runtime, and output differences. Submit the result through the <a href="https://github.com/SilverCoin256/open-institutional-capacity-observatory/issues/new?template=independent-reproduction.yml">independent reproduction issue form</a>. For substantive objections, see <a href="../break.html">Break OICO</a>.</p>
+    </section>
+  </main>
+  <footer><span>Open Institutional Capacity Observatory v1.0.0</span><a href="../index.html">Home</a><a href="https://github.com/SilverCoin256/open-institutional-capacity-observatory">GitHub</a></footer>
+</body>
+</html>

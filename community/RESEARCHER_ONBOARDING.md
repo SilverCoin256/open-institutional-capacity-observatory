@@ -8,11 +8,12 @@ OICO does not identify institutional quality, causal effects, staffing effort, l
 
 ## Five-minute route
 
-1. Read [the flagship case](../docs/FLAGSHIP_CASE_STUDY.md).
-2. Inspect `datasets/metadata/source_register.csv` and `datasets/metadata/license_review.md`.
-3. Run `python -m pip install -e .` and `oico reproduce`.
-4. Inspect `examples/flagship/outputs/` and the metric status table.
-5. Read [REPLICATION.md](../REPLICATION.md) before making a claim about reproduction.
+1. Open the [three-command reproduction page](https://silvercoin256.github.io/open-institutional-capacity-observatory/reproduce/).
+2. Read [the flagship case](../docs/FLAGSHIP_CASE_STUDY.md).
+3. Inspect `datasets/metadata/source_register.csv` and `datasets/metadata/license_review.md`.
+4. Run `python -m pip install -e .` and `oico reproduce`.
+5. Inspect `examples/flagship/outputs/` and the metric status table.
+6. Read [REPLICATION.md](../REPLICATION.md) and [Break OICO](../BREAK_OICO.md) before making a claim about reproduction or validity.
 
 The stable public API currently includes `oico.queue_acceleration_index`. The CLI and data layouts are designed to make extension inspectable rather than to hide assumptions in a large framework.
 

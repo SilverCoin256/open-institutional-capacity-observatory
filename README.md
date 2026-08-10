@@ -36,7 +36,7 @@ The status hierarchy is intentional. OICO does not promote a formal model to an 
 
 The release uses frozen source snapshots and derived metadata for EOIR, USCIS, CFPB, SEC, and an accountability-document corpus. Each source has a provenance record, checksum, transformation note, and redistribution decision in [the source register](datasets/metadata/source_register.csv) and [the license review](datasets/metadata/license_review.md). The data package does not redistribute linked third-party policy documents.
 
-The reproducibility contract is documented in [REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md). Independent researchers can use [REPLICATION.md](REPLICATION.md) and report a result through the [independent reproduction issue form](https://github.com/SilverCoin256/open-institutional-capacity-observatory/issues/new?template=independent-reproduction.yml).
+The reproducibility contract is documented in [REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md). Start with the [three-command reproduction page](https://silvercoin256.github.io/open-institutional-capacity-observatory/reproduce/), then use [REPLICATION.md](REPLICATION.md) and report a result through the [independent reproduction issue form](https://github.com/SilverCoin256/open-institutional-capacity-observatory/issues/new?template=independent-reproduction.yml). Researchers are also invited to [Break OICO](BREAK_OICO.md) with substantive criticism.
 
 ## Research Software
 
@@ -63,7 +63,7 @@ OICO is descriptive and diagnostic unless a future study supplies stronger ident
 
 ## Citation and License
 
-Cite the release using [CITATION.cff](CITATION.cff). No DOI is claimed until a real archival record is published. Code is MIT-licensed. Dataset metadata and derived documentation are CC BY 4.0 where stated; underlying sources retain their original terms. See [AI usage disclosure](AI_USAGE.md), [design decisions](docs/DESIGN_DECISIONS.md), and [external-validation status](docs/EXTERNAL_VALIDATION.md).
+Cite the release using [CITATION.cff](CITATION.cff). No DOI is claimed until a real archival record is published. Code is MIT-licensed. Dataset metadata and derived documentation are CC BY 4.0 where stated; underlying sources retain their original terms. See [AI usage disclosure](AI_USAGE.md), [design decisions](docs/DESIGN_DECISIONS.md), [external-validation status](docs/EXTERNAL_VALIDATION.md), and the [Zenodo deposit metadata](.zenodo.json).
 
 Project site: <https://silvercoin256.github.io/open-institutional-capacity-observatory/>
 

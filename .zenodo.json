@@ -1,0 +1,30 @@
+{
+  "title": "Open Institutional Capacity Observatory",
+  "upload_type": "software",
+  "publication_date": "2026-08-10",
+  "version": "1.0.0",
+  "description": "Open research software for measuring observable administrative congestion and oversight constraints from reproducible public data. The v1.0.0 flagship case studies descriptive backlog pressure in a frozen EOIR workload snapshot and records explicit scientific boundaries for beta and experimental modules.",
+  "creators": [
+    {
+      "name": "Gupta, Shaurya"
+    }
+  ],
+  "keywords": [
+    "computational social science",
+    "AI governance",
+    "institutional capacity",
+    "public administration",
+    "research software",
+    "reproducibility",
+    "queueing"
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/SilverCoin256/open-institutional-capacity-observatory",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ]
+}

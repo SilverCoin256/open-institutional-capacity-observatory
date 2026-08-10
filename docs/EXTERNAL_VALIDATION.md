@@ -11,6 +11,8 @@ This document records evidence that cannot be honestly created by the repository
 - Named lab, professor, course, paper, or conference use: none verified.
 - DOI: none.
 - PyPI/TestPyPI publication: none verified.
+- Researcher outreach: 60 relevant targets are recorded in a private local operations register; zero messages are counted because no authenticated scholarly sender identity was available.
+- Monitoring: a bounded public-API monitor is installed locally; monitoring is infrastructure, not external evidence.
 
 ## Evidence rules
 

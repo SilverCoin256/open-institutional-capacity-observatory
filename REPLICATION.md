@@ -1,5 +1,7 @@
 # Independent Replication Protocol
 
+Start with the public [reproduction landing page](https://silvercoin256.github.io/open-institutional-capacity-observatory/reproduce/). Use [BREAK_OICO.md](BREAK_OICO.md) when the result or its assumptions appear scientifically wrong.
+
 OICO is seeking independent attempts to reproduce the v1.0 flagship analysis and identify methodological, documentation, packaging, or data-provenance failures.
 
 ## Protocol
