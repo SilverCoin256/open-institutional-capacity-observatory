@@ -21,7 +21,7 @@ MANIFESTS = ROOT / "datasets" / "manifests"
 CHECKSUMS = ROOT / "datasets" / "checksums"
 VALIDATION = ROOT / "datasets" / "validation_reports"
 QUARANTINE = ROOT / "datasets" / "quarantine"
-RELEASE_TIMESTAMP_UTC = "2026-07-01T00:00:00+00:00"
+RELEASE_TIMESTAMP_UTC = "2026-08-10T00:00:00+00:00"
 
 
 SOURCE_SPECS = [
@@ -32,9 +32,14 @@ SOURCE_SPECS = [
         "institution_id": "eoir",
         "institution_name": "Executive Office for Immigration Review",
         "source_url": "https://www.justice.gov/eoir/reports-statistics",
+        "terms_url": "https://www.justice.gov/legalpolicies",
         "source_license": "DOJ states site information is public domain unless otherwise indicated; cite DOJ and exclude seals or identified third-party material.",
         "provenance_note": "Inherited from prior QAI research package and frozen as a v1 reproducibility snapshot.",
         "release_status": "included_public_domain_site_policy",
+        "raw_redistribution": "yes_with_exclusions",
+        "derived_redistribution": "yes",
+        "attribution": "U.S. Department of Justice and EOIR",
+        "notes": "Snapshot retrieval date is not recoverable; policy page reviewed 2026-08-10.",
     },
     {
         "source_dataset_id": "uscis_workload_quarterly",
@@ -43,9 +48,14 @@ SOURCE_SPECS = [
         "institution_id": "uscis",
         "institution_name": "U.S. Citizenship and Immigration Services",
         "source_url": "https://www.uscis.gov/about/reports-and-studies",
+        "terms_url": "https://uscode.house.gov/view.xhtml?edition=prelim&path=%2Fprelim%40title17%2Fchapter1",
         "source_license": "U.S. federal government work under 17 U.S.C. 105; attribution requested and identified third-party material remains excluded.",
         "provenance_note": "Inherited from prior QAI research package and frozen as a v1 reproducibility snapshot.",
         "release_status": "included_federal_work_with_third_party_caveat",
+        "raw_redistribution": "yes_for_agency-produced material only",
+        "derived_redistribution": "yes",
+        "attribution": "U.S. Citizenship and Immigration Services",
+        "notes": "Snapshot retrieval date is not recoverable; recheck dataset-specific terms before archival deposit.",
     },
     {
         "source_dataset_id": "cfpb_complaints_monthly",
@@ -54,9 +64,14 @@ SOURCE_SPECS = [
         "institution_id": "cfpb",
         "institution_name": "Consumer Financial Protection Bureau",
         "source_url": "https://www.consumerfinance.gov/data-research/consumer-complaints/search/api/v1/",
+        "terms_url": "https://www.consumerfinance.gov/data-research/consumer-complaints/",
         "source_license": "CFPB states published complaint data are freely available for anyone to use, analyze, and build on; cite CFPB.",
         "provenance_note": "Inherited from prior oversight-saturation analysis and frozen as a v1 reproducibility snapshot.",
         "release_status": "included_reuse_explicitly_permitted",
+        "raw_redistribution": "yes",
+        "derived_redistribution": "yes",
+        "attribution": "Consumer Financial Protection Bureau",
+        "notes": "Complaint data are not a representative statistical sample.",
     },
     {
         "source_dataset_id": "sec_edgar_yearly",
@@ -65,9 +80,14 @@ SOURCE_SPECS = [
         "institution_id": "sec",
         "institution_name": "U.S. Securities and Exchange Commission",
         "source_url": "https://www.sec.gov/edgar/search/",
+        "terms_url": "https://www.sec.gov/about/privacy-information",
         "source_license": "SEC permits copying and further distribution of sec.gov public information; cite SEC, exclude seals/logos, and respect SEC/EDGAR marks.",
         "provenance_note": "Inherited from prior oversight-saturation analysis and frozen as a v1 reproducibility snapshot.",
         "release_status": "included_copy_and_redistribute_permitted",
+        "raw_redistribution": "yes_for_public_information",
+        "derived_redistribution": "yes",
+        "attribution": "U.S. Securities and Exchange Commission",
+        "notes": "Exclude seals and logos; future live fetchers must respect SEC fair-access rules.",
     },
     {
         "source_dataset_id": "asi_document_corpus_manifest",
@@ -76,9 +96,14 @@ SOURCE_SPECS = [
         "institution_id": "asi_corpus",
         "institution_name": "Accountability Specificity Index document corpus",
         "source_url": "Per-document official URLs in the source_url column.",
+        "terms_url": "Per-document official terms, if any.",
         "source_license": "OICO metadata released under CC BY 4.0; linked source documents are not redistributed and retain their original terms.",
         "provenance_note": "Inherited from AIES accountability-specificity reproducibility package.",
         "release_status": "included_derived_metadata_only",
+        "raw_redistribution": "no_full_text_not_stored",
+        "derived_redistribution": "yes_under_CC_BY_4_0",
+        "attribution": "OICO metadata; original document publishers retain their terms",
+        "notes": "Linked documents are not bundled; per-document terms require user review.",
     },
     {
         "source_dataset_id": "asi_adjudicated_scores",
@@ -87,9 +112,14 @@ SOURCE_SPECS = [
         "institution_id": "asi_corpus",
         "institution_name": "Accountability Specificity Index document corpus",
         "source_url": "Per-document official URLs in the source_url column of the corpus manifest.",
+        "terms_url": "Per-document official terms, if any.",
         "source_license": "OICO-derived coding metadata released under CC BY 4.0; no full source text is redistributed.",
         "provenance_note": "Adjudicated 23-document matrix from AIES reproducibility package.",
         "release_status": "included_derived_metadata_only",
+        "raw_redistribution": "no_full_text_not_stored",
+        "derived_redistribution": "yes_under_CC_BY_4_0",
+        "attribution": "OICO-derived coding metadata",
+        "notes": "Short source excerpts are not bundled; per-document terms require user review.",
     },
 ]
 
@@ -400,9 +430,18 @@ def build_source_register() -> list[dict[str, object]]:
                 "institution_id": spec["institution_id"],
                 "institution_name": spec["institution_name"],
                 "source_url": spec["source_url"],
+                "terms_url": spec["terms_url"],
+                "retrieved_at": "not_recoverable_for_inherited_snapshot",
+                "license_audit_date": "2026-08-10",
                 "source_license": spec["source_license"],
+                "raw_redistribution": spec["raw_redistribution"],
+                "derived_redistribution": spec["derived_redistribution"],
+                "attribution": spec["attribution"],
+                "local_snapshot": "yes",
                 "provenance_note": spec["provenance_note"],
                 "release_status": spec["release_status"],
+                "audit_status": "derived_metadata_only" if spec["release_status"] == "included_derived_metadata_only" else "cleared_with_caveat",
+                "notes": spec["notes"],
             }
         )
     return rows
@@ -535,7 +574,7 @@ def write_manifest(extra_paths: list[Path] | None = None) -> None:
             }
         )
     payload = {
-        "name": "Open Institutional Capacity Observatory v1.0.0-rc1",
+        "name": "Open Institutional Capacity Observatory v1.0.0",
         "version": __version__,
         "generated_at_utc": RELEASE_TIMESTAMP_UTC,
         "license_code": "MIT",
@@ -633,5 +672,5 @@ def write_quarantine_report(validation: dict[str, object]) -> None:
         for issue in quarantined:
             lines.append(f"- {issue['table']}: {issue['issue']}")
     else:
-        lines.append("No rows are quarantined in v1.0.0-rc1.")
+        lines.append("No rows are quarantined in v1.0.0.")
     (QUARANTINE / "README.md").write_text("\n".join(lines) + "\n", encoding="utf-8")

@@ -8,14 +8,27 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "releases" / "github" / "oico-1.0.0-rc1.tar.gz"
+OUT = ROOT / "releases" / "github" / "oico-1.0.0.tar.gz"
 ARCHIVE_CHECKSUM = OUT.with_suffix(OUT.suffix + ".sha256")
 ARTIFACT_MANIFEST = ROOT / "releases" / "artifact_manifest.json"
 EXCLUDED_DIRS = {".git", "__pycache__", ".pytest_cache", ".mypy_cache", "dist", "build"}
 EXCLUDED_FILES = {OUT, ARCHIVE_CHECKSUM, ARTIFACT_MANIFEST}
-RELEASE_TIMESTAMP_UTC = "2026-07-01T00:00:00+00:00"
+RELEASE_TIMESTAMP_UTC = "2026-08-10T00:00:00+00:00"
 ARTIFACT_PATHS = [
     "README.md",
+    "AI_USAGE.md",
+    "REPLICATION.md",
+    "replication/reference_manifest.json",
+    "PROJECT_SCORECARD.md",
+    "docs/standards_audit.md",
+    "docs/METRIC_STATUS.md",
+    "docs/FLAGSHIP_CASE_STUDY.md",
+    "docs/REPRODUCIBILITY.md",
+    "docs/DESIGN_DECISIONS.md",
+    "docs/EXTERNAL_VALIDATION.md",
+    "releases/reproduction_manifest.json",
+    "examples/flagship/outputs/eoir_queue_series.csv",
+    "examples/flagship/outputs/flagship_report.json",
     "LICENSE",
     "LICENSE-DATA",
     "CITATION.cff",
@@ -74,7 +87,7 @@ def write_artifact_manifest() -> None:
     ]
     payload = {
         "name": "Open Institutional Capacity Observatory release artifacts",
-        "version": "1.0.0-rc1",
+        "version": "1.0.0",
         "generated_at_utc": RELEASE_TIMESTAMP_UTC,
         "artifacts": artifacts,
     }
@@ -98,7 +111,7 @@ def main() -> int:
         with tarfile.open(fileobj=gz, mode="w") as archive:
             for path in sorted(ROOT.rglob("*")):
                 if path.is_file() and include(path):
-                    archive.add(path, arcname=Path("oico-1.0.0-rc1") / path.relative_to(ROOT), filter=normalize)
+                    archive.add(path, arcname=Path("oico-1.0.0") / path.relative_to(ROOT), filter=normalize)
     archive_sha256 = sha256(OUT)
     ARCHIVE_CHECKSUM.write_text(f"{archive_sha256}  {OUT.name}\n", encoding="utf-8")
     write_artifact_manifest()

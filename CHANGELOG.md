@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.0 - 2026-08-10
+
+- Promoted the reproducible EOIR queue analysis to the stable flagship case study.
+- Classified QAI as a stable descriptive indicator, ASI as beta, and the remaining formal models as experimental.
+- Added a clean-room replication protocol, standards audit, design-decision record, AI-use disclosure, scorecard, and external-validation tracker.
+- Added public package metadata, GitHub Pages deployment, coverage enforcement, and an external researcher onboarding path.
+
 ## 1.0.0-rc1
 
 - Created the canonical Open Institutional Capacity Observatory monorepo.

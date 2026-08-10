@@ -3,7 +3,7 @@ from __future__ import annotations
 import unittest
 
 from oico.metrics.asi import score_document
-from oico.metrics.qai import queue_acceleration_index
+from oico.metrics.qai import compute_qai_series, queue_acceleration_index
 from oico.metrics.sedi import logistic, rolling_sedi, sedi_from_indicators
 from oico.models.authorization import authorization_quality, intervention_scenarios
 from oico.models.procedural_capacity import procedural_failure_risk, simulate_procedural_days
@@ -21,6 +21,19 @@ class MetricTests(unittest.TestCase):
     def test_qai_rejects_negative_completions(self) -> None:
         with self.assertRaises(ValueError):
             queue_acceleration_index(10, 9, -1)
+
+    def test_qai_series_preserves_first_and_missing_periods(self) -> None:
+        values = compute_qai_series([
+            {"pending": 10, "completed": 2},
+            {"pending": 14, "completed": 2},
+            {"pending": "", "completed": 2},
+            {"pending": 20, "completed": 2},
+        ])
+        self.assertEqual(values, [None, 2.0, None, None])
+
+    def test_qai_rejects_non_numeric_series_values(self) -> None:
+        with self.assertRaises(ValueError):
+            compute_qai_series([{"pending": "not-a-number", "completed": 1}])
 
     def test_sedi_bounds(self) -> None:
         value = sedi_from_indicators(

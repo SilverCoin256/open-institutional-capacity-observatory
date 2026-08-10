@@ -69,8 +69,8 @@ REQUIRED_PATHS = [
     "releases/RELEASE_CHECKLIST.md",
     "releases/artifact_manifest.json",
     "releases/github/RELEASE_NOTES.md",
-    "releases/github/oico-1.0.0-rc1.tar.gz",
-    "releases/github/oico-1.0.0-rc1.tar.gz.sha256",
+    "releases/github/oico-1.0.0.tar.gz",
+    "releases/github/oico-1.0.0.tar.gz.sha256",
     "releases/github/reproduction_report.json",
 ]
 

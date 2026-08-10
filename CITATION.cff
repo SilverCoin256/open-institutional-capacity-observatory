@@ -1,17 +1,19 @@
 cff-version: 1.2.0
 title: Open Institutional Capacity Observatory
-message: "If you use OICO, cite the archived software release and any dataset DOI once minted."
+message: "If you use OICO, cite this software release and the underlying source datasets listed in the provenance register."
 type: software
 authors:
   - family-names: Gupta
     given-names: Shaurya
-version: "1.0.0-rc1"
-date-released: "2026-07-01"
+version: "1.0.0"
+date-released: "2026-08-10"
 license: MIT
-abstract: "Research infrastructure for measuring institutional capacity, administrative congestion, oversight saturation, and governance specificity from public data."
+abstract: "Open research software for measuring observable administrative congestion and oversight constraints from public data."
+repository-code: "https://github.com/SilverCoin256/open-institutional-capacity-observatory"
 keywords:
   - computational social science
   - AI governance
   - public administration
   - reproducibility
   - benchmarks
+  - institutional capacity

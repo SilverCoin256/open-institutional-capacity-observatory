@@ -2,10 +2,13 @@
   "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
   "@type": "SoftwareSourceCode",
   "name": "Open Institutional Capacity Observatory",
-  "version": "1.0.0-rc1",
-  "description": "Research infrastructure for measuring institutional capacity, oversight saturation, queue pressure, and governance specificity from public data.",
+  "version": "1.0.0",
+  "description": "Open research software for measuring observable administrative congestion and oversight constraints from public data.",
   "programmingLanguage": "Python",
   "license": "https://spdx.org/licenses/MIT",
+  "codeRepository": "https://github.com/SilverCoin256/open-institutional-capacity-observatory",
+  "issueTracker": "https://github.com/SilverCoin256/open-institutional-capacity-observatory/issues",
+  "url": "https://silvercoin256.github.io/open-institutional-capacity-observatory/",
   "author": [
     {
       "@type": "Person",

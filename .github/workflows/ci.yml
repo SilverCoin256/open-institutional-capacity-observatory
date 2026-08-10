@@ -5,22 +5,61 @@ on:
   pull_request:
 
 jobs:
-  reproduce:
+  quality:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: ${{ matrix.python-version }}
+          cache: pip
       - name: Install package
-        run: python -m pip install -e .
-      - name: Reproduce release candidate
+        run: python -m pip install -e . coverage build twine
+      - name: Run tests with coverage
+        run: coverage run -m unittest discover -s tests && coverage report
+      - name: Validate data and reproduction
         run: python -m oico.cli.main reproduce
-      - name: Run tests
-        run: python -m unittest discover -s tests
+      - name: Build distributions
+        run: python -m build
+      - name: Check package metadata
+        run: twine check dist/*
       - name: Execute notebooks
         run: python scripts/execute_notebooks.py
+      - name: Check documentation links
+        run: python scripts/check_docs.py
       - name: Scan for credentials
         run: python scripts/scan_secrets.py
       - name: Check release
         run: python scripts/check_release.py
+
+  pages:
+    if: github.ref == 'refs/heads/main'
+    needs: quality
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: Assemble static site
+        run: |
+          mkdir -p _site/assets
+          cp website/*.html website/*.css _site/
+          cp figures/gallery/qai_eoir.svg _site/assets/
+          cp figures/gallery/FIGURE_MANIFEST.md _site/assets/
+          cp README.md _site/README.md
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
