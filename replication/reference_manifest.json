@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "tag": "v1.0.0",
+  "comparison": "Exact SHA-256 for deterministic flagship outputs from the tagged release.",
+  "artifacts": [
+    {
+      "path": "examples/flagship/outputs/eoir_queue_series.csv",
+      "sha256": "806d019f37c3787425163bde1ad40c6094c2bf0a519164ea8d40a8de5c0a4c0a"
+    },
+    {
+      "path": "examples/flagship/outputs/flagship_report.json",
+      "sha256": "36af01f619bea11dd011c5d05462a84d992a33adb967dfff646a32c01528f674"
+    },
+    {
+      "path": "figures/gallery/qai_eoir.svg",
+      "sha256": "eb45216ad4782284d5ae2cca34310e786266122a0095fe2106ef59feccd24af5"
+    }
+  ],
+  "expected_report": {
+    "status": "pass",
+    "observations": 11,
+    "comparable_qai_observations": 10,
+    "positive_qai_periods": 8,
+    "peak_pending": 3925351,
+    "peak_period": "2024",
+    "peak_qai_rounded": 1.58
+  }
+}

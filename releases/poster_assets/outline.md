@@ -9,4 +9,4 @@ Recommended figures:
 - `figures/gallery/sec_review_intensity.svg`
 - `figures/gallery/asi_score_distribution.svg`
 
-Recommended footer: "Release candidate. DOI pending. Public-data snapshots with documented limitations."
+Recommended footer: "OICO v1.0.0. DOI pending. Public-data snapshots with documented limitations."

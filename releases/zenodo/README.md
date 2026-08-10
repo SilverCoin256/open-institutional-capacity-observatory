@@ -1,6 +1,6 @@
 # Zenodo Release Plan
 
-Do not mint a DOI for the release candidate until a repository curator confirms the dated source-license record and at least one external reproduction is complete.
+Do not mint a DOI until an authenticated depositor confirms the dated source-license record, the final archive contents, and the independent-validation status.
 
 When ready:
 

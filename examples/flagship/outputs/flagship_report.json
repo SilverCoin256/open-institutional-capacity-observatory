@@ -1,0 +1,26 @@
+{
+  "artifacts": {
+    "figure": "figures/gallery/qai_eoir.svg",
+    "table": "examples/flagship/outputs/eoir_queue_series.csv"
+  },
+  "backlog_multiple_first_to_peak": 4.749435,
+  "comparable_qai_observations": 10,
+  "first_pending": 826488,
+  "first_period": "2016",
+  "interpretation": "The frozen snapshot shows sustained backlog expansion relative to completions through the 2024 peak, followed by negative QAI values in later rows.",
+  "metric_definition": "QAI_t = (Pending_t - Pending_(t-1)) / Completions_t",
+  "non_claims": [
+    "QAI does not identify staffing capacity.",
+    "The series does not establish causality or legal noncompliance.",
+    "The snapshot does not establish that all periods have identical reporting coverage."
+  ],
+  "observations": 11,
+  "peak_pending": 3925351,
+  "peak_period": "2024",
+  "peak_qai": 1.579835,
+  "positive_qai_periods": 8,
+  "processed_input": "datasets/processed/queue_observations.csv",
+  "research_question": "Did EOIR backlog growth outpace recorded completions in the frozen annual snapshot?",
+  "source_dataset": "datasets/raw/eoir_annual.csv",
+  "status": "pass"
+}

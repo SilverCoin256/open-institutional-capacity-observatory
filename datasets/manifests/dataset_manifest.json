@@ -6,9 +6,9 @@
       "sha256": "c778d4822edc8176de2af41b688b433d55a6800d46887773df7bb781c6f4257f"
     },
     {
-      "bytes": 2687,
+      "bytes": 2853,
       "path": "datasets/metadata/license_review.md",
-      "sha256": "a2024c731da2f3f784d3cad970948061400cf89bfb290a819fbde0e3c6700d90"
+      "sha256": "afb9372fc58edd40ee6af436c0d75c60300341e6c8c54014b4a6c6d6a67eea94"
     },
     {
       "bytes": 4181,
@@ -16,14 +16,14 @@
       "sha256": "58d8d4e47d000e20425fa9dec2e7af5fe4461390ee318449212049422178ff6d"
     },
     {
-      "bytes": 3263,
+      "bytes": 5069,
       "path": "datasets/metadata/source_register.csv",
-      "sha256": "5488538e479f197cd60e426dc8bc73ffc6961d2a2c3ce61f408cfe66ed24764c"
+      "sha256": "c6feb0f2d3708f242b2e13c3417f17fe7ff2b9f7ba938796173c6cc5669b3854"
     },
     {
-      "bytes": 2798,
+      "bytes": 2794,
       "path": "datasets/metadata/transformation_log.md",
-      "sha256": "a5f983189e1ff0aa0267361e1f5567df6b1c2a1fd76c54f5b72983f57bf259d9"
+      "sha256": "113102cdee316cf16789e3e01ab688efb0316b5c95b19ec9493bdcf07147e5a3"
     },
     {
       "bytes": 6190,
@@ -51,9 +51,9 @@
       "sha256": "714cd8722cec890bc14663011a51bfaf5abbc9281327fdd995a74fced764aa07"
     },
     {
-      "bytes": 253,
+      "bytes": 249,
       "path": "datasets/quarantine/README.md",
-      "sha256": "8aa2496c846193984a6ce018369c1be449800dc9e6ba8073cddb3cd87107d4e1"
+      "sha256": "3f732e66e13c8b21ba268fc168e352dc8c98a6dc5f51cefe3d10839acea3e6f0"
     },
     {
       "bytes": 272,
@@ -101,9 +101,9 @@
       "sha256": "9d67c4facd9eda94be91b3476e2e94bdd832284e61c2659c62fe7d40c8f959f4"
     }
   ],
-  "generated_at_utc": "2026-07-01T00:00:00+00:00",
+  "generated_at_utc": "2026-08-10T00:00:00+00:00",
   "license_code": "MIT",
   "license_data": "CC-BY-4.0 for OICO metadata and derived tables; source files retain original terms.",
-  "name": "Open Institutional Capacity Observatory v1.0.0-rc1",
-  "version": "1.0.0-rc1"
+  "name": "Open Institutional Capacity Observatory v1.0.0",
+  "version": "1.0.0"
 }

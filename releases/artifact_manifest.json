@@ -1,9 +1,74 @@
 {
   "artifacts": [
     {
-      "bytes": 4035,
+      "bytes": 5310,
       "path": "README.md",
-      "sha256": "bf848c49e0d2b663551f081ceb7acd73898031fc4a1e79dc7a3a40404b7bd046"
+      "sha256": "8a11a7ea8d79a8dc4006d192e0db7a6f5fcc904a98d211986d3aeda4e1622251"
+    },
+    {
+      "bytes": 1271,
+      "path": "AI_USAGE.md",
+      "sha256": "f9b0ea1ccdbd5257dfe72667b4525f06076f1cc5b76ac74d770274a67da99718"
+    },
+    {
+      "bytes": 1513,
+      "path": "REPLICATION.md",
+      "sha256": "ba15fabfdd47cd21c4eff7d592b2c20ed7cfae818d743ae073af8d5e053bdb7d"
+    },
+    {
+      "bytes": 850,
+      "path": "replication/reference_manifest.json",
+      "sha256": "dee9066ce22cdb0e121831b522090d966ce340ad4c8d351b9a1353b078447b27"
+    },
+    {
+      "bytes": 1522,
+      "path": "PROJECT_SCORECARD.md",
+      "sha256": "ed66d7966261345cf432c50c230d7eedd319f8a0d2c61be0d8b96fa677d16773"
+    },
+    {
+      "bytes": 4208,
+      "path": "docs/standards_audit.md",
+      "sha256": "54558c426291b33a9efec08f021f74a5a5419e9d48c9c6232e017c69c49629cd"
+    },
+    {
+      "bytes": 2969,
+      "path": "docs/METRIC_STATUS.md",
+      "sha256": "45b66803567220c41f397c02822dd1234e9ac7408a59d4a2bf9b3696605ffcfd"
+    },
+    {
+      "bytes": 2451,
+      "path": "docs/FLAGSHIP_CASE_STUDY.md",
+      "sha256": "ffa9117d157139f9d58cb62d69c8a21c9015c1e60032c20bb8f9df9dff1104c5"
+    },
+    {
+      "bytes": 1911,
+      "path": "docs/REPRODUCIBILITY.md",
+      "sha256": "158d74ec99600f987fe0c908fad4eff8b4a26da15c4caff7e6cf08972285d6fb"
+    },
+    {
+      "bytes": 2618,
+      "path": "docs/DESIGN_DECISIONS.md",
+      "sha256": "8876c8b46f96613d9d579529b652dbaae654212526093491e932a4d2f12eab34"
+    },
+    {
+      "bytes": 1431,
+      "path": "docs/EXTERNAL_VALIDATION.md",
+      "sha256": "0c3c41ad48fd861e8fe3a0376a67c98a915d0e0509d8eae7da21189507ee2a72"
+    },
+    {
+      "bytes": 1156,
+      "path": "releases/reproduction_manifest.json",
+      "sha256": "e75e1c328ff024b2fb638f51661428cc489c035aada9797c8e3a73d1d07e69d1"
+    },
+    {
+      "bytes": 509,
+      "path": "examples/flagship/outputs/eoir_queue_series.csv",
+      "sha256": "806d019f37c3787425163bde1ad40c6094c2bf0a519164ea8d40a8de5c0a4c0a"
+    },
+    {
+      "bytes": 1126,
+      "path": "examples/flagship/outputs/flagship_report.json",
+      "sha256": "36af01f619bea11dd011c5d05462a84d992a33adb967dfff646a32c01528f674"
     },
     {
       "bytes": 1110,
@@ -16,29 +81,29 @@
       "sha256": "b8ee68a4ceaa0cfb2544746b0ab719d5e22dd467fed222eea9cbf43a9a65f9f5"
     },
     {
-      "bytes": 587,
+      "bytes": 693,
       "path": "CITATION.cff",
-      "sha256": "ba165b53de427937f1b3c71e22dcd149c8c30e2ec5f8ee0d9378a6ae75463553"
+      "sha256": "4c3c6633bdb98dec352917668579b6ab46b936bd4a68300e8b3f777ebf1be1a3"
     },
     {
-      "bytes": 681,
+      "bytes": 932,
       "path": "codemeta.json",
-      "sha256": "aa17921a7c32eb4efc0f0e5bd59a23154272dd26f10687eb44e10817a69df7dc"
+      "sha256": "3fc8d2f311f171ea3706b9f05b0fe5feed3b4db48ae13bde7d5b3b6701306729"
     },
     {
-      "bytes": 3722,
+      "bytes": 3714,
       "path": "datasets/manifests/dataset_manifest.json",
-      "sha256": "2cfaaf181c2eb2c9952769c9313b5ed76b895bfc3a0d54d6ef12bae43d2de49e"
+      "sha256": "def6d378cda706173dfe97b1ff850f260b3101606289b8301c86bab6b2d67bea"
     },
     {
       "bytes": 2078,
       "path": "datasets/checksums/sha256sums.txt",
-      "sha256": "cdca606c4f11c2d5ee881babf025209513c768da5f90ee4ec9d34b49c9a90f94"
+      "sha256": "f2c6211ffcf97c6eb42f05a60765d6928b1a821052b3d7c7a414dd0c7a4d38cd"
     },
     {
-      "bytes": 2687,
+      "bytes": 2853,
       "path": "datasets/metadata/license_review.md",
-      "sha256": "a2024c731da2f3f784d3cad970948061400cf89bfb290a819fbde0e3c6700d90"
+      "sha256": "afb9372fc58edd40ee6af436c0d75c60300341e6c8c54014b4a6c6d6a67eea94"
     },
     {
       "bytes": 580,
@@ -91,37 +156,37 @@
       "sha256": "c70fa54e7d338278dec51673ba586316019b193260a53073097c7b474264e64f"
     },
     {
-      "bytes": 8058,
+      "bytes": 1716,
       "path": "docs/release/release_candidate_report.md",
-      "sha256": "56baace3156953a0c9dafb06aed841815cb6a17ecc9de63cec2225a0cd806dfa"
+      "sha256": "01d4a8940acfbdd77ff15c665dfb36df7a33be12c60f9c84b20544930ff0de83"
     },
     {
-      "bytes": 1988,
+      "bytes": 1183,
       "path": "releases/RELEASE_CHECKLIST.md",
-      "sha256": "e85c552c85bb3292c3850150772e5f568bd632c3637f584843bc9416daa98603"
+      "sha256": "890c07d9dd364984887bb7ded94b7dbdea61cb8f7d6be1711d0fe4f8e3608190"
     },
     {
-      "bytes": 693,
+      "bytes": 1148,
       "path": "releases/github/RELEASE_NOTES.md",
-      "sha256": "0f9a7b3372ba3038070bc47c521f239c85019e7e96cbbc5f3aca1be4760e7c90"
+      "sha256": "db05c6d98fcf378dced33e1a2c7892c7d249b5c50a882c61903cedcb4ed3091f"
     },
     {
-      "bytes": 846,
+      "bytes": 2033,
       "path": "releases/github/reproduction_report.json",
-      "sha256": "d1610fab53bebc79c384ae90656f32fd29e931d33acd672b64cec02c0d498fcf"
+      "sha256": "59c594ad8c1875267347a2bcdcea65c4e6fc1eba531e87df7ac47115514a1e60"
     },
     {
-      "bytes": 92871,
-      "path": "releases/github/oico-1.0.0-rc1.tar.gz",
-      "sha256": "1404f2971302ea526d4340dc40eab2f185b37cfb55d3ee280b606011941d1d2f"
+      "bytes": 281132,
+      "path": "releases/github/oico-1.0.0.tar.gz",
+      "sha256": "4b7ada9f790218cb019d2560c8cf2fcd7a390041c8bca8a419de79ecaae5a32b"
     },
     {
-      "bytes": 88,
-      "path": "releases/github/oico-1.0.0-rc1.tar.gz.sha256",
-      "sha256": "e25f8857843f250b8468bf343fdd7fd3d5b9bd71e55a315f614df22e46e287fd"
+      "bytes": 84,
+      "path": "releases/github/oico-1.0.0.tar.gz.sha256",
+      "sha256": "eb33f3c0336f665b1bac9306677e0a04f1d3a5d93e52cd96e604f1b17fe68539"
     }
   ],
-  "generated_at_utc": "2026-07-01T00:00:00+00:00",
+  "generated_at_utc": "2026-08-10T00:00:00+00:00",
   "name": "Open Institutional Capacity Observatory release artifacts",
-  "version": "1.0.0-rc1"
+  "version": "1.0.0"
 }

@@ -1,0 +1,38 @@
+{
+  "artifacts": [
+    {
+      "bytes": 396,
+      "path": "datasets/raw/eoir_annual.csv",
+      "sha256": "512e19dbfe1d5d0065dfa4320460a188510ba231104868b44d76490f1e1712f1"
+    },
+    {
+      "bytes": 3253,
+      "path": "datasets/processed/queue_observations.csv",
+      "sha256": "714cd8722cec890bc14663011a51bfaf5abbc9281327fdd995a74fced764aa07"
+    },
+    {
+      "bytes": 509,
+      "path": "examples/flagship/outputs/eoir_queue_series.csv",
+      "sha256": "806d019f37c3787425163bde1ad40c6094c2bf0a519164ea8d40a8de5c0a4c0a"
+    },
+    {
+      "bytes": 1126,
+      "path": "examples/flagship/outputs/flagship_report.json",
+      "sha256": "36af01f619bea11dd011c5d05462a84d992a33adb967dfff646a32c01528f674"
+    },
+    {
+      "bytes": 2901,
+      "path": "figures/gallery/qai_eoir.svg",
+      "sha256": "eb45216ad4782284d5ae2cca34310e786266122a0095fe2106ef59feccd24af5"
+    }
+  ],
+  "deterministic_outputs": true,
+  "environment": {
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "python": "3.12.13"
+  },
+  "external_validation_level": 0,
+  "input_manifest": "datasets/manifests/dataset_manifest.json",
+  "status": "pass",
+  "version": "1.0.0"
+}

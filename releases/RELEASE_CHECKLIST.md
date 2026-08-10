@@ -1,38 +1,24 @@
-# OICO v1.0.0-rc1 Release Checklist
+# OICO v1.0.0 Release Checklist
 
-Review date: 2026-07-01
+Review date: 2026-08-10
 
-## Verified Locally
+## Technical-stability gate
 
-- [x] Version is `1.0.0-rc1` across package and citation metadata.
-- [x] Annotated local tag `v1.0.0-rc1` is prepared.
-- [x] Data build, validation, benchmark baselines, and six figures reproduce.
-- [x] All five notebooks execute.
-- [x] Twenty-one tests pass, including metric edge cases and non-editable-install root discovery.
-- [x] Documentation and website links pass the repository checker.
-- [x] Credential scan reports no high-risk patterns.
-- [x] Dataset manifest and top-level artifact manifest verify all listed checksums.
-- [x] The release archive is deterministic and has a SHA-256 sidecar.
-- [x] A non-editable wheel built from the archive passes the complete release gate in an isolated environment.
-- [x] Source-by-source redistribution evidence and caveats are dated and recorded.
+- [x] Scientific module status and non-claims are documented.
+- [x] Stable flagship analysis is reproducible from frozen inputs.
+- [x] Data provenance, checksums, transformation notes, and license decisions are present.
+- [x] Unit, data, integration, CLI, packaging, notebook, and release checks are configured.
+- [x] Clean-room install and reproduction audit is recorded.
+- [x] Public README and website explain the problem, result, method, and boundary.
+- [x] AI-use disclosure, contribution rules, security policy, and replication protocol are public.
+- [x] Stable release artifacts, checksum sidecar, and machine-readable manifests are generated.
 
-## Publication Holds
+## Independent-validation gate
 
-- [ ] Authenticate GitHub through a fresh secure session; do not reuse the token pasted in chat.
-- [ ] Create the intended public repository and add its verified URL to `CITATION.cff` and `codemeta.json`.
-- [ ] Push `main` and the annotated `v1.0.0-rc1` tag.
-- [ ] Create the GitHub prerelease using `releases/github/RELEASE_NOTES.md` and attach the archive, checksum sidecar, and artifact manifest.
-- [ ] Ask an external researcher to run the archive gate and record the independent result.
-- [ ] Obtain repository-curator confirmation of `datasets/metadata/license_review.md` before DOI deposit.
-- [ ] Mint a DOI only after the archival record exists; then add the real DOI to citation metadata.
+- [ ] At least one independent reproduction.
+- [ ] Two independent reproductions and substantive external feedback.
+- [ ] Named downstream research, teaching, or integration use.
+- [ ] Real DOI minted and verified.
+- [ ] External adoption KPIs supported by auditable evidence.
 
-## Adoption Evidence
-
-- [ ] Named laboratory use.
-- [ ] Professor recommendation.
-- [ ] University course link.
-- [ ] Published-paper citation.
-- [ ] Conference poster or demo built by an external user.
-
-These boxes must only be checked with public or privately auditable evidence. Repository
-existence, stars, self-downloads, and self-authored demos do not count as external adoption.
+These boxes are intentionally open. Internal CI, self-downloads, stars, and repository existence do not count as external validation.

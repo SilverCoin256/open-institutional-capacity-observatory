@@ -1,17 +1,24 @@
-# Release Notes: v1.0.0-rc1
+# OICO v1.0.0
 
-This release candidate introduces the Open Institutional Capacity Observatory as a unified public-data infrastructure project.
+OICO v1.0.0 is a technically stable release of open research software for measuring observable administrative congestion and oversight constraints from reproducible public data.
 
-## Highlights
+## Included
 
-- Canonical processed tables for institutions, queues, institutional indicators, ASI scores, and metric documentation.
-- Reproducible data build, validation, figures, and benchmarks.
-- Five conservative baseline benchmark tasks.
-- Teaching guide, lab onboarding guide, release report, and community files.
+- EOIR flagship case study with output table, JSON report, figure, and limitations.
+- Stable QAI indicator with explicit descriptive interpretation.
+- Beta ASI corpus and experimental SEDI, Authorization Saturation, and Procedural Capacity modules.
+- Frozen public-data snapshots, provenance register, license review, schemas, transformations, and checksums.
+- Python package, CLI, tests, notebooks, benchmark baselines, teaching material, and static research site.
+- Clean-room audit, replication protocol, external-validation tracker, AI disclosure, and JOSS readiness record.
 
-## Caveats
+## Evidence boundary
 
-- Small public-data pilot, not a mature benchmark.
-- No live-fetch pipeline in v1.
-- Proxy labels are not independent ground truth.
-- DOI should wait for source-license review and external replication.
+This release does not claim a DOI, external adoption, independent reproduction, causal identification, institutional-quality measurement, or legal-compliance finding. Those states require evidence outside the author's own execution.
+
+## Reproduce
+
+```bash
+python -m pip install -e .
+oico reproduce
+python -m unittest discover -s tests
+```
