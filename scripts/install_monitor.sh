@@ -5,6 +5,12 @@ LABEL="com.oico.validation-monitor"
 ROOT="$HOME/Library/Application Support/OICO/monitor"
 PLIST="$HOME/Library/LaunchAgents/$LABEL.plist"
 PROJECT="$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)"
+PYTHON3="${OICO_PYTHON:-$(command -v python3)}"
+
+if [ -z "$PYTHON3" ]; then
+  echo "python3 not found" >&2
+  exit 1
+fi
 
 mkdir -p "$ROOT" "$HOME/Library/LaunchAgents"
 cat > "$PLIST" <<EOF
@@ -12,7 +18,7 @@ cat > "$PLIST" <<EOF
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0"><dict>
   <key>Label</key><string>$LABEL</string>
-  <key>ProgramArguments</key><array><string>/usr/bin/env</string><string>python3</string><string>$PROJECT/scripts/monitor_public_activity.py</string></array>
+  <key>ProgramArguments</key><array><string>$PYTHON3</string><string>$PROJECT/scripts/monitor_public_activity.py</string></array>
   <key>EnvironmentVariables</key><dict><key>OICO_MONITOR_DIR</key><string>$ROOT</string></dict>
   <key>StartInterval</key><integer>21600</integer>
   <key>RunAtLoad</key><true/>
