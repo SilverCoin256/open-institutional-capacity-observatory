@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Read the replication protocol
+    url: https://github.com/SilverCoin256/open-institutional-capacity-observatory/blob/main/REPLICATION.md
+    about: Run the documented workflow before reporting a reproduction result.

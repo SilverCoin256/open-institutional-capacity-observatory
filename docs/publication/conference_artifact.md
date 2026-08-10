@@ -17,4 +17,4 @@ Reviewer command:
 python scripts/check_release.py
 ```
 
-Artifact claim: reproducible research infrastructure release candidate, not a final public leaderboard.
+Artifact claim: reproducible research infrastructure release with baseline tasks, not a validated public leaderboard.

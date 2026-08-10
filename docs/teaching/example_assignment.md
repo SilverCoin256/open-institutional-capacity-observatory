@@ -6,7 +6,7 @@ You are evaluating whether OICO is suitable for a computational social science l
 
 Complete the following:
 
-1. Reproduce the release candidate.
+1. Reproduce the stable technical release.
 2. Choose one dataset and trace it from raw snapshot to processed table.
 3. Choose one metric and explain its definition, assumptions, limitations, and expected misuse.
 4. Evaluate one benchmark task and state whether its labels are ground truth, proxy labels, or synthetic targets.

@@ -8,7 +8,7 @@ How can researchers build reproducible public-data infrastructure for measuring 
 
 - A canonical data model.
 - Five transparent metrics or models.
-- Public-data release candidate.
+- Public-data stable technical release.
 - Benchmark tasks with baselines and caveats.
 - Teaching and adoption package.
 

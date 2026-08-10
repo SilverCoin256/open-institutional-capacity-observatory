@@ -6,7 +6,7 @@
 python -m pip install -e .
 ```
 
-No third-party Python dependencies are required for the v1 release candidate.
+No third-party Python dependencies are required for the v1 stable technical release.
 
 Run data, benchmark, figure, and notebook workflows from the repository checkout. If an
 automation runner starts elsewhere, set `OICO_PROJECT_ROOT` to the checkout's absolute

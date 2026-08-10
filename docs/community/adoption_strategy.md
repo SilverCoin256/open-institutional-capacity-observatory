@@ -30,7 +30,7 @@ Hard to ignore: extension pathways can become publishable replication notes or c
 
 Problem solved: turns institutional bottlenecks into transparent variables and caveated indicators.
 
-Switching-cost reducer: public-data-only release candidate and readable source register.
+Switching-cost reducer: public-data-only stable release and readable source register.
 
 Hard to ignore: avoids black-box scoring and foregrounds misuse risks.
 

@@ -18,7 +18,7 @@ Yes. The teaching guides are designed for a graduate methods session on public-d
 
 ## Does it require private credentials?
 
-No. The v1 release candidate reproduces from frozen public-data snapshots and requires no private token.
+No. The v1 stable technical release reproduces from frozen public-data snapshots and requires no private token.
 
 ## What would make it stronger?
 

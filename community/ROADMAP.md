@@ -1,8 +1,8 @@
 # Roadmap
 
-## v1.0.0-rc1
+## v1.0.0
 
-- Frozen public-data release candidate.
+- Frozen public-data stable technical release.
 - Dependency-light reproduction.
 - Conservative baseline benchmarks.
 - Teaching and lab-onboarding documentation.

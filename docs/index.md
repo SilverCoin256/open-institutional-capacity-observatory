@@ -2,7 +2,7 @@
 
 OICO is a reproducible public-data platform for measuring institutional capacity, administrative congestion, oversight saturation, and AI-governance accountability.
 
-The v1 release candidate is deliberately narrow. It contains four public institutional time series and one 23-document AI-governance coding corpus. The purpose is to establish a credible, reproducible foundation that another lab can inspect, teach, extend, and critique.
+The v1 stable technical release is deliberately narrow. It contains four public institutional time series and one 23-document AI-governance coding corpus. The purpose is to establish a credible, reproducible foundation that another lab can inspect, teach, extend, and critique.
 
 ## What Researchers Can Do
 
@@ -10,7 +10,7 @@ The v1 release candidate is deliberately narrow. It contains four public institu
 - Recompute QAI, SEDI, ASI, authorization-saturation, and procedural-capacity examples.
 - Run baseline benchmark tasks with documented limitations.
 - Use the data dictionary and source register to extend the observatory to new institutions.
-- Teach institutional measurement with a fully inspectable release candidate.
+- Teach institutional measurement with a fully inspectable release.
 
 ## What Researchers Should Not Do
 
@@ -37,4 +37,4 @@ The command rebuilds processed data, deterministic SVG figures, benchmark baseli
 
 ## Release Boundary
 
-This is a release candidate for lab review and public-methods hardening. A DOI-bearing release should wait until a repository curator confirms the dated source-license record, benchmark tasks gain independent labels, and at least one external replication attempt is complete.
+This is a technically stable release for public review and independent replication. A DOI-bearing archive should wait until an authenticated depositor confirms the source record and final archive contents.

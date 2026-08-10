@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Open Institutional Capacity Observatory</title>
+  <desc id="desc">Open research software for measuring observable administrative congestion and oversight constraints from public data.</desc>
+  <rect width="1200" height="630" fill="#17212b"/>
+  <rect x="72" y="76" width="10" height="478" fill="#d85b5b"/>
+  <text x="126" y="164" fill="#f7f9fb" font-family="Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="4">OICO</text>
+  <text x="126" y="246" fill="#f7f9fb" font-family="Arial, sans-serif" font-size="58" font-weight="700">Open Institutional</text>
+  <text x="126" y="314" fill="#f7f9fb" font-family="Arial, sans-serif" font-size="58" font-weight="700">Capacity Observatory</text>
+  <text x="126" y="388" fill="#b9c6d2" font-family="Arial, sans-serif" font-size="25">Reproducible public-data research infrastructure</text>
+  <path d="M130 496 C240 474 320 516 410 474 S590 420 680 456 S850 414 1010 330" fill="none" stroke="#49a3d1" stroke-width="7"/>
+  <circle cx="410" cy="474" r="9" fill="#f7f9fb"/><circle cx="680" cy="456" r="9" fill="#f7f9fb"/><circle cx="1010" cy="330" r="9" fill="#d85b5b"/>
+  <text x="126" y="574" fill="#b9c6d2" font-family="Arial, sans-serif" font-size="18">technology x institutions x organizational capacity x decision-making</text>
+</svg>

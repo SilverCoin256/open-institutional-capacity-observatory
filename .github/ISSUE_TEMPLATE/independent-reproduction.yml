@@ -1,0 +1,72 @@
+name: Independent Reproduction Report
+description: Report an independent attempt to reproduce the OICO v1 flagship analysis.
+title: "Replication report: "
+labels: ["replication", "external-validation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please run the exact protocol in REPLICATION.md. A disagreement with the metric is welcome; distinguish it from a reproduction failure.
+  - type: input
+    id: identifier
+    attributes:
+      label: Name or identifier
+      description: Optional. Use a pseudonym if preferred.
+  - type: input
+    id: affiliation
+    attributes:
+      label: Affiliation
+      description: Optional.
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+    validations:
+      required: true
+  - type: input
+    id: python
+    attributes:
+      label: Python version
+    validations:
+      required: true
+  - type: input
+    id: install
+    attributes:
+      label: Install route
+      placeholder: editable checkout, release archive, or other
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Commit or tag
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Reproduction status
+      options:
+        - reproduced
+        - reproduced with deviations
+        - failed
+        - blocked
+    validations:
+      required: true
+  - type: textarea
+    id: checksums
+    attributes:
+      label: Checksum comparison
+      description: Compare outputs with replication/reference_manifest.json.
+    validations:
+      required: true
+  - type: textarea
+    id: deviations
+    attributes:
+      label: Deviations
+      description: Include errors, changed inputs, or environment differences.
+  - type: textarea
+    id: comments
+    attributes:
+      label: Comments
+      description: Methodological feedback is welcome.

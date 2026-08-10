@@ -3,45 +3,64 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Open Institutional Capacity Observatory</title>
+  <meta name="description" content="Open research software for measuring observable administrative congestion and oversight constraints from public data.">
+  <title>OICO | Open Institutional Capacity Observatory</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html">OICO</a>
-      <a href="datasets.html">Datasets</a>
-      <a href="metrics.html">Metrics</a>
+  <header class="masthead">
+    <nav aria-label="Primary navigation">
+      <a class="brand" href="index.html">OICO</a>
+      <a href="examples.html">Flagship case</a>
+      <a href="datasets.html">Data</a>
+      <a href="metrics.html">Methods</a>
       <a href="benchmarks.html">Benchmarks</a>
-      <a href="examples.html">Examples</a>
-      <a href="downloads.html">Downloads</a>
+      <a href="downloads.html">Reproduce</a>
       <a href="citation.html">Citation</a>
-      <a href="faq.html">FAQ</a>
     </nav>
     <div class="hero">
-      <h1>Open Institutional Capacity Observatory</h1>
-      <p>Public-data infrastructure for measuring administrative congestion, oversight saturation, and AI-governance accountability with transparent methods.</p>
+      <p class="eyebrow">Technology x institutions x capacity</p>
+      <h1>What happens when review demand grows faster than institutions can observe and process it?</h1>
+      <p class="lede">OICO turns public administrative traces into transparent, reproducible measurements of backlog pressure and oversight constraints.</p>
+      <div class="actions">
+        <a class="button primary" href="examples.html">Read the flagship case</a>
+        <a class="button secondary" href="downloads.html">Reproduce the result</a>
+      </div>
     </div>
   </header>
   <main>
-    <section class="grid" aria-label="release summary">
-      <div class="item"><div class="metric">5</div><div>canonical institutions or corpora</div></div>
-      <div class="item"><div class="metric">23</div><div>queue observations</div></div>
-      <div class="item"><div class="metric">187</div><div>institutional indicator rows</div></div>
-      <div class="item"><div class="metric">5</div><div>baseline benchmark tasks</div></div>
+    <section class="feature" aria-labelledby="finding-title">
+      <div>
+        <p class="eyebrow">Flagship finding</p>
+        <h2 id="finding-title">EOIR backlog pressure is observable without pretending to observe institutional quality.</h2>
+        <p>In the frozen annual snapshot, pending matters rose from 826,488 in 2016 to 3,925,351 in 2024. QAI was positive in every comparable period from 2017 through 2024 and peaked at 1.580 in 2024.</p>
+        <p class="boundary"><strong>Boundary:</strong> this is a descriptive signal of backlog growth relative to recorded completions. It does not identify staffing, causality, intent, or legal compliance.</p>
+      </div>
+      <figure>
+        <img src="assets/qai_eoir.svg" alt="Line chart of EOIR Queue Acceleration Index by fiscal year, with positive values through 2024 and negative values in later snapshot rows.">
+        <figcaption>Generated from the tracked EOIR snapshot by <code>oico make-figures</code>.</figcaption>
+      </figure>
     </section>
-    <h2>Reproduce</h2>
-    <p>Run <code>python -m oico.cli.main reproduce</code> from the repository root to regenerate processed data, figures, benchmark outputs, and release audit files.</p>
-    <h2>Scientific Boundary</h2>
-    <p>OICO v1 is a release candidate for lab review. It is not yet a mature public leaderboard and does not make causal claims about institutional failure.</p>
-    <h2>Use Cases</h2>
-    <div class="grid">
-      <div class="item">Methods courses can teach public-data reproducibility and proxy-metric critique.</div>
-      <div class="item">Research labs can add institutions without rebuilding the data model.</div>
-      <div class="item">AI governance researchers can connect accountability text with administrative capacity.</div>
-    </div>
-    <h2>Portal</h2>
-    <p>Use the navigation links for dataset provenance, metric glossary, benchmark caveats, downloads, citation guidance, and skeptical researcher FAQ.</p>
+    <section class="status-strip" aria-labelledby="status-title">
+      <p class="eyebrow">Scientific hierarchy</p>
+      <h2 id="status-title">One stable indicator, one beta corpus, three experimental models.</h2>
+      <div class="status-grid">
+        <div><span class="status stable">Stable</span><strong>QAI</strong><p>Observable backlog growth normalized by recorded completions.</p></div>
+        <div><span class="status beta">Beta</span><strong>ASI</strong><p>Document-level accountability specificity in a small adjudicated corpus.</p></div>
+        <div><span class="status experimental">Experimental</span><strong>SEDI, Authorization, Procedural Capacity</strong><p>Useful hypotheses and scenarios that need external calibration.</p></div>
+      </div>
+    </section>
+    <section class="portal" aria-labelledby="portal-title">
+      <p class="eyebrow">Research portal</p>
+      <h2 id="portal-title">Start with the evidence, then inspect the assumptions.</h2>
+      <div class="portal-links">
+        <a href="datasets.html"><strong>Data provenance</strong><span>Sources, snapshots, licenses, checksums.</span></a>
+        <a href="metrics.html"><strong>Methods and limits</strong><span>Definitions, assumptions, failure modes.</span></a>
+        <a href="benchmarks.html"><strong>Benchmark tasks</strong><span>Baselines separated from ground truth.</span></a>
+        <a href="faq.html"><strong>Skeptical FAQ</strong><span>What OICO can and cannot support.</span></a>
+      </div>
+    </section>
   </main>
+  <footer><span>Open Institutional Capacity Observatory v1.0.0</span><a href="https://github.com/SilverCoin256/open-institutional-capacity-observatory">GitHub</a><a href="citation.html">Citation</a></footer>
 </body>
 </html>
