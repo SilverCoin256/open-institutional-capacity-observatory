@@ -17,6 +17,7 @@ from oico.logging_utils import configure_logging
 from oico.metrics.qai import queue_acceleration_index
 from oico.validation import audit_release
 from oico.visualization import make_all_figures
+from research.study1_analysis import run_study1
 
 
 def cmd_build_data(_: argparse.Namespace) -> int:
@@ -49,6 +50,12 @@ def cmd_run_flagship(_: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_study1(_: argparse.Namespace) -> int:
+    result = run_study1()
+    print(json.dumps(result, indent=2, sort_keys=True))
+    return 0
+
+
 def cmd_compute_qai(args: argparse.Namespace) -> int:
     result = queue_acceleration_index(args.pending, args.previous_pending, args.completed)
     print(json.dumps({"qai": result}))
@@ -67,6 +74,13 @@ def write_reproduction_manifest(report: dict[str, object]) -> None:
         ROOT / "examples" / "flagship" / "outputs" / "flagship_report.json",
         ROOT / "figures" / "gallery" / "qai_eoir.svg",
     ]
+    if (ROOT / "research" / "outputs" / "study1_results.json").is_file():
+        paths.extend(
+            [
+                ROOT / "research" / "outputs" / "study1_results.json",
+                ROOT / "research" / "outputs" / "study1_queue_series.csv",
+            ]
+        )
     artifacts = []
     for path in paths:
         if path.is_file():
@@ -83,17 +97,19 @@ def write_reproduction_manifest(report: dict[str, object]) -> None:
     write_json(ROOT / "releases" / "reproduction_manifest.json", payload)
 
 
-def cmd_reproduce(_: argparse.Namespace) -> int:
+def cmd_reproduce(args: argparse.Namespace) -> int:
     validation = build_all()
     figures = make_all_figures()
     benchmarks = run_all_benchmarks()
     flagship = run_flagship()
+    study1 = run_study1() if args.full else None
     payload = {
         "version": __version__,
         "data_validation": validation,
         "figure_count": len(figures),
         "benchmark_count": len(benchmarks),
         "flagship": flagship,
+        "study1": study1,
         "release_audit": {"status": "pending"},
     }
     write_json(ROOT / "releases" / "github" / "reproduction_report.json", payload)
@@ -141,7 +157,11 @@ def build_parser() -> argparse.ArgumentParser:
     sub.add_parser("make-figures", help="Generate deterministic SVG figures.").set_defaults(func=cmd_make_figures)
     sub.add_parser("run-benchmarks", help="Run baseline benchmark tasks.").set_defaults(func=cmd_run_benchmarks)
     sub.add_parser("run-flagship", help="Run the EOIR flagship case study.").set_defaults(func=cmd_run_flagship)
-    sub.add_parser("reproduce", help="Run the complete v1 reproduction workflow.").set_defaults(func=cmd_reproduce)
+    study = sub.add_parser("study1", help="Run the exploratory cross-institution Study 1 analysis.")
+    study.set_defaults(func=cmd_study1)
+    reproduce = sub.add_parser("reproduce", help="Run the complete v1 reproduction workflow.")
+    reproduce.add_argument("--full", action="store_true", help="Also run the exploratory Study 1 analysis.")
+    reproduce.set_defaults(func=cmd_reproduce)
     sub.add_parser("audit-release", help="Check release-candidate completeness and checksums.").set_defaults(func=cmd_audit_release)
     sub.add_parser("summary", help="Print processed table row counts.").set_defaults(func=cmd_summary)
     sub.add_parser("config", help="Print release configuration.").set_defaults(func=cmd_config)

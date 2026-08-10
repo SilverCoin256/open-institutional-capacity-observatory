@@ -7,8 +7,8 @@ Use the repository citation metadata until a DOI has been minted.
   title = {Open Institutional Capacity Observatory},
   author = {Gupta, Shaurya},
   year = {2026},
-  version = {1.0.0},
-  note = {Stable technical release. DOI pending.}
+  version = {1.1.0},
+  note = {Stable technical release with exploratory Study 1. DOI pending.}
 }
 ```
 

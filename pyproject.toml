@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "oico"
-version = "1.0.0"
+version = "1.1.0"
 description = "Open research software for measuring observable administrative congestion and oversight constraints from public data."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -35,7 +35,7 @@ Changelog = "https://github.com/SilverCoin256/open-institutional-capacity-observ
 oico = "oico.cli.main:main"
 
 [tool.setuptools.packages.find]
-include = ["oico*"]
+include = ["oico*", "research*"]
 
 [tool.coverage.run]
 branch = true

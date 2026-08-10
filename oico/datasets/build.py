@@ -574,7 +574,7 @@ def write_manifest(extra_paths: list[Path] | None = None) -> None:
             }
         )
     payload = {
-        "name": "Open Institutional Capacity Observatory v1.0.0",
+        "name": f"Open Institutional Capacity Observatory v{__version__}",
         "version": __version__,
         "generated_at_utc": RELEASE_TIMESTAMP_UTC,
         "license_code": "MIT",
@@ -672,5 +672,5 @@ def write_quarantine_report(validation: dict[str, object]) -> None:
         for issue in quarantined:
             lines.append(f"- {issue['table']}: {issue['issue']}")
     else:
-        lines.append("No rows are quarantined in v1.0.0.")
+        lines.append(f"No rows are quarantined in v{__version__}.")
     (QUARANTINE / "README.md").write_text("\n".join(lines) + "\n", encoding="utf-8")

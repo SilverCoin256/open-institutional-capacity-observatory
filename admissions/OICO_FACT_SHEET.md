@@ -14,7 +14,7 @@ Institutions increasingly process and oversee complex decisions. OICO studies wh
 
 ## Verifiable status as of 2026-08-10
 
-- Public GitHub repository and stable `v1.0.0` tag.
+- Public GitHub repository and stable `v1.1.0` tag.
 - Local clean-room reproduction passes.
 - GitHub Actions workflow configured for Python 3.10, 3.11, and 3.12.
 - No DOI, PyPI publication, independent reproduction, named lab use, professor recommendation, course link, published citation, or external conference artifact verified yet.

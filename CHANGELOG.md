@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.0 - 2026-08-10
+
+- Added the dependency-free OICO Study 1 comparative analysis across four frozen public-data systems.
+- Added conventional queue baselines, within-system comparisons, explicit noncomparability rules, machine-readable results, and falsification records.
+- Added `oico study1` and `oico reproduce --full`.
+- Added the ultimate baseline and external-standards audits, project-differentiation scorecard, ownership audit, and public Why This Exists page.
+
 ## 1.0.0 - 2026-08-10
 
 - Promoted the reproducible EOIR queue analysis to the stable flagship case study.

@@ -3,12 +3,17 @@ from __future__ import annotations
 import gzip
 import hashlib
 import json
+import sys
 import tarfile
 from pathlib import Path
 
-
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "releases" / "github" / "oico-1.0.0.tar.gz"
+sys.path.insert(0, str(ROOT))
+
+from oico import __version__
+
+
+OUT = ROOT / "releases" / "github" / f"oico-{__version__}.tar.gz"
 ARCHIVE_CHECKSUM = OUT.with_suffix(OUT.suffix + ".sha256")
 ARTIFACT_MANIFEST = ROOT / "releases" / "artifact_manifest.json"
 EXCLUDED_DIRS = {".git", "__pycache__", ".pytest_cache", ".mypy_cache", "dist", "build"}
@@ -57,6 +62,8 @@ def include(path: Path) -> bool:
     parts = path.relative_to(ROOT).parts
     if any(part in EXCLUDED_DIRS or part.endswith(".egg-info") for part in parts):
         return False
+    if path.name in {".DS_Store", ".coverage"}:
+        return False
     if path.suffix in {".pyc"}:
         return False
     if path in EXCLUDED_FILES:
@@ -87,7 +94,7 @@ def write_artifact_manifest() -> None:
     ]
     payload = {
         "name": "Open Institutional Capacity Observatory release artifacts",
-        "version": "1.0.0",
+        "version": __version__,
         "generated_at_utc": RELEASE_TIMESTAMP_UTC,
         "artifacts": artifacts,
     }
@@ -111,7 +118,7 @@ def main() -> int:
         with tarfile.open(fileobj=gz, mode="w") as archive:
             for path in sorted(ROOT.rglob("*")):
                 if path.is_file() and include(path):
-                    archive.add(path, arcname=Path("oico-1.0.0") / path.relative_to(ROOT), filter=normalize)
+                    archive.add(path, arcname=Path(f"oico-{__version__}") / path.relative_to(ROOT), filter=normalize)
     archive_sha256 = sha256(OUT)
     ARCHIVE_CHECKSUM.write_text(f"{archive_sha256}  {OUT.name}\n", encoding="utf-8")
     write_artifact_manifest()

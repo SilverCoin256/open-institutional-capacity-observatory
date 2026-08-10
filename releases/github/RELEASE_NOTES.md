@@ -1,24 +1,24 @@
-# OICO v1.0.0
+# OICO v1.1.0
 
-OICO v1.0.0 is a technically stable release of open research software for measuring observable administrative congestion and oversight constraints from reproducible public data.
+OICO v1.1.0 adds a bounded comparative research layer to the stable reproducible software core.
 
 ## Included
 
-- EOIR flagship case study with output table, JSON report, figure, and limitations.
-- Stable QAI indicator with explicit descriptive interpretation.
-- Beta ASI corpus and experimental SEDI, Authorization Saturation, and Procedural Capacity modules.
-- Frozen public-data snapshots, provenance register, license review, schemas, transformations, and checksums.
-- Python package, CLI, tests, notebooks, benchmark baselines, teaching material, and static research site.
-- Clean-room audit, replication protocol, external-validation tracker, AI disclosure, and JOSS readiness record.
+- EOIR flagship case with explicit FY2016-FY2024 authoritative window.
+- Exploratory Study 1 across EOIR, USCIS, CFPB, and SEC frozen snapshots.
+- Conventional baselines, within-system associations, noncomparability rules, robustness, falsification, and construct-validity records.
+- `oico study1` and `oico reproduce --full`.
+- Public Why This Exists page, ultimate baseline/standards audits, ownership audit, and project differentiation scorecard.
+- Existing tests, notebooks, checksums, source register, license review, and clean-room release path.
 
 ## Evidence boundary
 
-This release does not claim a DOI, external adoption, independent reproduction, causal identification, institutional-quality measurement, or legal-compliance finding. Those states require evidence outside the author's own execution.
+This release does not claim a DOI, PyPI publication, independent reproduction, external adoption, causal identification, institutional-quality measurement, or legal-compliance finding. QAI remains a transparent normalized backlog-change signal, not claimed as new mathematics.
 
 ## Reproduce
 
 ```bash
 python -m pip install -e .
-oico reproduce
+oico reproduce --full
 python -m unittest discover -s tests
 ```

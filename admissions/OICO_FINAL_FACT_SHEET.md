@@ -9,7 +9,7 @@ OICO is open research software for measuring observable administrative workload 
 ## What exists
 
 - Public GitHub repository and static research website.
-- Stable `v1.0.0` release path.
+- Stable `v1.1.0` release path.
 - Python package and CLI with no runtime dependencies.
 - Frozen datasets with checksums, schemas, source register, license notes, and transformation log.
 - EOIR flagship case, executable notebooks, tests, figures, benchmark pilots, and replication instructions.

@@ -1,6 +1,6 @@
 """Open Institutional Capacity Observatory public package."""
 
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 
 from oico.metrics.qai import queue_acceleration_index
 

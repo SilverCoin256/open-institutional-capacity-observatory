@@ -23,7 +23,7 @@
     {
       "bytes": 2794,
       "path": "datasets/metadata/transformation_log.md",
-      "sha256": "113102cdee316cf16789e3e01ab688efb0316b5c95b19ec9493bdcf07147e5a3"
+      "sha256": "6f0b219783a4019c7b6977c88b7f8166c8321ea91393d4c68274f2a841f3f700"
     },
     {
       "bytes": 6190,
@@ -53,7 +53,7 @@
     {
       "bytes": 249,
       "path": "datasets/quarantine/README.md",
-      "sha256": "3f732e66e13c8b21ba268fc168e352dc8c98a6dc5f51cefe3d10839acea3e6f0"
+      "sha256": "661c53b6b43813d869a714113f10e11b3a4ce9f75aea2cb8bfbefba02f653f8d"
     },
     {
       "bytes": 272,
@@ -104,6 +104,6 @@
   "generated_at_utc": "2026-08-10T00:00:00+00:00",
   "license_code": "MIT",
   "license_data": "CC-BY-4.0 for OICO metadata and derived tables; source files retain original terms.",
-  "name": "Open Institutional Capacity Observatory v1.0.0",
-  "version": "1.0.0"
+  "name": "Open Institutional Capacity Observatory v1.1.0",
+  "version": "1.1.0"
 }

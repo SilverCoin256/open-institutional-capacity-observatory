@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
+from oico import __version__
 from oico.io import ROOT, read_json, sha256, write_json
 
 
@@ -69,8 +70,8 @@ REQUIRED_PATHS = [
     "releases/RELEASE_CHECKLIST.md",
     "releases/artifact_manifest.json",
     "releases/github/RELEASE_NOTES.md",
-    "releases/github/oico-1.0.0.tar.gz",
-    "releases/github/oico-1.0.0.tar.gz.sha256",
+    f"releases/github/oico-{__version__}.tar.gz",
+    f"releases/github/oico-{__version__}.tar.gz.sha256",
     "releases/github/reproduction_report.json",
 ]
 

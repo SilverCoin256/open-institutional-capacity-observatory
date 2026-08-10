@@ -14,6 +14,14 @@ python -m unittest discover -s tests
 
 `oico reproduce` rebuilds processed tables from the frozen raw snapshots, validates schemas and checksums, regenerates deterministic SVG figures, runs baseline benchmark tasks, writes the EOIR flagship outputs, packages the release, and runs the release audit.
 
+The expanded research workflow is:
+
+```bash
+oico reproduce --full
+```
+
+This additionally runs the exploratory cross-institution Study 1 analysis. Study 1 keeps EOIR, USCIS, CFPB, and SEC in separate within-system analyses because their units and outcomes are not commensurate.
+
 ## Provenance
 
 Inputs are listed in `datasets/metadata/source_register.csv`. The dataset manifest and SHA-256 file record source snapshots and processed outputs. `datasets/metadata/transformation_log.md` describes the raw-to-processed transformations. The license review records redistribution scope and unresolved source-specific caveats.

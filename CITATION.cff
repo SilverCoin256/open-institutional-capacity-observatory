@@ -5,7 +5,7 @@ type: software
 authors:
   - family-names: Gupta
     given-names: Shaurya
-version: "1.0.0"
+version: "1.1.0"
 date-released: "2026-08-10"
 license: MIT
 abstract: "Open research software for measuring observable administrative congestion and oversight constraints from public data."

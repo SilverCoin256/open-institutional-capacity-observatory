@@ -1,9 +1,9 @@
 {
   "artifacts": [
     {
-      "bytes": 5310,
+      "bytes": 6451,
       "path": "README.md",
-      "sha256": "8a11a7ea8d79a8dc4006d192e0db7a6f5fcc904a98d211986d3aeda4e1622251"
+      "sha256": "a7f3e828832a9cf86cbdee5e68041222ae3d7a0b9730a6c9a2966dcac680b0e4"
     },
     {
       "bytes": 1271,
@@ -11,9 +11,9 @@
       "sha256": "f9b0ea1ccdbd5257dfe72667b4525f06076f1cc5b76ac74d770274a67da99718"
     },
     {
-      "bytes": 1513,
+      "bytes": 1748,
       "path": "REPLICATION.md",
-      "sha256": "ba15fabfdd47cd21c4eff7d592b2c20ed7cfae818d743ae073af8d5e053bdb7d"
+      "sha256": "1e079f03c2bdcd6cb9079bcad9962fa73c415e5873d8af9f06bfb6cd9bc0255d"
     },
     {
       "bytes": 850,
@@ -26,24 +26,24 @@
       "sha256": "ed66d7966261345cf432c50c230d7eedd319f8a0d2c61be0d8b96fa677d16773"
     },
     {
-      "bytes": 4208,
+      "bytes": 4244,
       "path": "docs/standards_audit.md",
-      "sha256": "54558c426291b33a9efec08f021f74a5a5419e9d48c9c6232e017c69c49629cd"
+      "sha256": "5fd7009f70445005da69ab720586d702238d00b04aa35ca5a1716a1baf8194c5"
     },
     {
-      "bytes": 2969,
+      "bytes": 3082,
       "path": "docs/METRIC_STATUS.md",
-      "sha256": "45b66803567220c41f397c02822dd1234e9ac7408a59d4a2bf9b3696605ffcfd"
+      "sha256": "4c579b89d522a8671a2f051fd54f20e459ffdff35ae1e7ff5f878d65e0d5690f"
     },
     {
-      "bytes": 2451,
+      "bytes": 2828,
       "path": "docs/FLAGSHIP_CASE_STUDY.md",
-      "sha256": "ffa9117d157139f9d58cb62d69c8a21c9015c1e60032c20bb8f9df9dff1104c5"
+      "sha256": "010b9f302c5039ea66841765457aa696bef709960fbd4c9ed1766ead49ff0ebd"
     },
     {
-      "bytes": 1911,
+      "bytes": 2189,
       "path": "docs/REPRODUCIBILITY.md",
-      "sha256": "158d74ec99600f987fe0c908fad4eff8b4a26da15c4caff7e6cf08972285d6fb"
+      "sha256": "bd5e4109b13d8f38456d6308ccdb3a332df8afa64bb4a721eb2b90d3436a5235"
     },
     {
       "bytes": 2618,
@@ -51,14 +51,14 @@
       "sha256": "8876c8b46f96613d9d579529b652dbaae654212526093491e932a4d2f12eab34"
     },
     {
-      "bytes": 1431,
+      "bytes": 1880,
       "path": "docs/EXTERNAL_VALIDATION.md",
-      "sha256": "0c3c41ad48fd861e8fe3a0376a67c98a915d0e0509d8eae7da21189507ee2a72"
+      "sha256": "a9fda56f68a7027fc2f484b909e892ba75b05caa97466b1fb45acb374d155239"
     },
     {
-      "bytes": 1156,
+      "bytes": 1508,
       "path": "releases/reproduction_manifest.json",
-      "sha256": "e75e1c328ff024b2fb638f51661428cc489c035aada9797c8e3a73d1d07e69d1"
+      "sha256": "fd798150a6aeadf34eaca9959ab65d3bff8d869707f178b196f9d3e9b0fb1f30"
     },
     {
       "bytes": 509,
@@ -83,22 +83,22 @@
     {
       "bytes": 693,
       "path": "CITATION.cff",
-      "sha256": "4c3c6633bdb98dec352917668579b6ab46b936bd4a68300e8b3f777ebf1be1a3"
+      "sha256": "58aa9cc8ee0a1d57b4dedd0d2ae73ab6f6620ee2635e2e3809d55755cf2f5304"
     },
     {
       "bytes": 932,
       "path": "codemeta.json",
-      "sha256": "3fc8d2f311f171ea3706b9f05b0fe5feed3b4db48ae13bde7d5b3b6701306729"
+      "sha256": "a4a48f5783cbd73c55e64828c85f94343428057d54cc040cb7db9b9952c7744b"
     },
     {
       "bytes": 3714,
       "path": "datasets/manifests/dataset_manifest.json",
-      "sha256": "def6d378cda706173dfe97b1ff850f260b3101606289b8301c86bab6b2d67bea"
+      "sha256": "4d6913e5e753518d606f94ea452126c286e85903cf34355cd5a745981390aecb"
     },
     {
       "bytes": 2078,
       "path": "datasets/checksums/sha256sums.txt",
-      "sha256": "f2c6211ffcf97c6eb42f05a60765d6928b1a821052b3d7c7a414dd0c7a4d38cd"
+      "sha256": "78f23b085add8217b8c9b210aebc6e9ae7672a904278502d6ed4c2195bb576d4"
     },
     {
       "bytes": 2853,
@@ -163,30 +163,30 @@
     {
       "bytes": 1183,
       "path": "releases/RELEASE_CHECKLIST.md",
-      "sha256": "890c07d9dd364984887bb7ded94b7dbdea61cb8f7d6be1711d0fe4f8e3608190"
+      "sha256": "e0910ecf5a09f304fb0c22053edab1c1a9ecc4e899a2f099fe93ebe85293c959"
     },
     {
-      "bytes": 1148,
+      "bytes": 1090,
       "path": "releases/github/RELEASE_NOTES.md",
-      "sha256": "db05c6d98fcf378dced33e1a2c7892c7d249b5c50a882c61903cedcb4ed3091f"
+      "sha256": "6c98551154b3a887de6ea6442d63bdc42126f21d6b8ec9fef30c89ec0dba78f0"
     },
     {
-      "bytes": 2033,
+      "bytes": 6719,
       "path": "releases/github/reproduction_report.json",
-      "sha256": "59c594ad8c1875267347a2bcdcea65c4e6fc1eba531e87df7ac47115514a1e60"
+      "sha256": "32fe55adbfa4b081476db4e3a6e4ffe4b369b72681cea3206896b5262cb63e4d"
     },
     {
-      "bytes": 281132,
-      "path": "releases/github/oico-1.0.0.tar.gz",
-      "sha256": "4b7ada9f790218cb019d2560c8cf2fcd7a390041c8bca8a419de79ecaae5a32b"
+      "bytes": 603381,
+      "path": "releases/github/oico-1.1.0.tar.gz",
+      "sha256": "502a5700efe9fda1ca542ea27bc0cd1a0d44c9b2cba8774745d7e37158994058"
     },
     {
       "bytes": 84,
-      "path": "releases/github/oico-1.0.0.tar.gz.sha256",
-      "sha256": "eb33f3c0336f665b1bac9306677e0a04f1d3a5d93e52cd96e604f1b17fe68539"
+      "path": "releases/github/oico-1.1.0.tar.gz.sha256",
+      "sha256": "441449da2528f298bc3828032bb227f31ecd5ed3096a7c2d350ae40e5d6ff860"
     }
   ],
   "generated_at_utc": "2026-08-10T00:00:00+00:00",
   "name": "Open Institutional Capacity Observatory release artifacts",
-  "version": "1.0.0"
+  "version": "1.1.0"
 }

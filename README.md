@@ -18,6 +18,8 @@ oico reproduce
 python -m unittest discover -s tests
 ```
 
+Run the expanded comparative research layer with `oico reproduce --full`. The Study 1 plan, results, robustness record, and machine-readable outputs are in [`docs/research/`](docs/research/) and [`research/outputs/`](research/outputs/).
+
 The exact inputs, transformations, output table, figure, interpretation, and limitations are in [the flagship case study](docs/FLAGSHIP_CASE_STUDY.md). The one-command workflow writes a machine-readable report to `examples/flagship/outputs/flagship_report.json`.
 
 ## What OICO Measures
@@ -32,7 +34,7 @@ The exact inputs, transformations, output table, figure, interpretation, and lim
 
 The status hierarchy is intentional. OICO does not promote a formal model to an empirical measure merely because it is mathematically convenient. See [metric status and boundaries](docs/METRIC_STATUS.md).
 
-The final scientific audit is equally explicit: QAI is a transparent normalized backlog-change signal, not claimed as new mathematics or a direct measure of institutional capacity. The authoritative EOIR interpretation uses FY2016-FY2024; later frozen rows are retained for audit but excluded from the primary inference because their provenance is not independently recoverable. See the [claims ledger](CLAIMS_LEDGER.md), [robustness audit](docs/research/EMPIRICAL_ROBUSTNESS.md), and [final research audit](docs/research/FINAL_RESEARCH_AUDIT.md).
+The final scientific audit is equally explicit: QAI is a transparent normalized backlog-change signal, not claimed as new mathematics or a direct measure of institutional capacity. The authoritative EOIR interpretation uses FY2016-FY2024; later frozen rows are retained for audit but excluded from the primary inference because their provenance is not independently recoverable. See the [claims ledger](CLAIMS_LEDGER.md), [Study 1 results](docs/research/STUDY1_RESULTS.md), and [ultimate final report](docs/research/ULTIMATE_FINAL_REPORT.md). The earlier [research audit](docs/research/FINAL_RESEARCH_AUDIT.md) remains as the historical v1.0.0 audit record.
 
 ## Data and Reproducibility
 

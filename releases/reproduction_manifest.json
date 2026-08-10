@@ -24,15 +24,25 @@
       "bytes": 2901,
       "path": "figures/gallery/qai_eoir.svg",
       "sha256": "eb45216ad4782284d5ae2cca34310e786266122a0095fe2106ef59feccd24af5"
+    },
+    {
+      "bytes": 4453,
+      "path": "research/outputs/study1_results.json",
+      "sha256": "ac7baa33275e996699e147a4c43ee89a03b07c367823ee371a8bd7a687a2df41"
+    },
+    {
+      "bytes": 1647,
+      "path": "research/outputs/study1_queue_series.csv",
+      "sha256": "8a89560bc210e31a41d7b24a5ef21001b3ee3d44aff01b492f089a8a90ece12e"
     }
   ],
   "deterministic_outputs": true,
   "environment": {
-    "platform": "macOS-26.5.2-arm64-arm-64bit",
-    "python": "3.12.13"
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "python": "3.14.6"
   },
   "external_validation_level": 0,
   "input_manifest": "datasets/manifests/dataset_manifest.json",
   "status": "pass",
-  "version": "1.0.0"
+  "version": "1.1.0"
 }

@@ -7,7 +7,7 @@ OICO is seeking independent attempts to reproduce the v1.0 flagship analysis and
 ## Protocol
 
 1. Use a clean machine or temporary environment with Python 3.10, 3.11, or 3.12.
-2. Clone the repository and check out tag `v1.0.0`, or download the release archive from [GitHub](https://github.com/SilverCoin256/open-institutional-capacity-observatory/releases/tag/v1.0.0).
+2. Clone the repository and check out tag `v1.1.0`, or download the release archive from [GitHub](https://github.com/SilverCoin256/open-institutional-capacity-observatory/releases/tag/v1.1.0).
 3. Run `python -m pip install -e .`.
 4. Run `oico reproduce`.
 5. Compare the generated files with `replication/reference_manifest.json`.

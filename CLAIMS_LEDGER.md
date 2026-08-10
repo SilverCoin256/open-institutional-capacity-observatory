@@ -5,7 +5,7 @@ Audit date: 2026-08-10. This is the authoritative wording for public, academic, 
 | Claim | Evidence | Status | Safe wording | Do not say |
 |---|---|---|---|---|
 | OICO is open research software | Public repository, MIT code license, package, CLI, tests | Verified | OICO is open research software for reproducible public-data measurement. | OICO is widely adopted. |
-| OICO has a stable release path | `v1.0.0` tag, release archive, clean-room audit, CI | Verified internally | The repository has a reproducible `v1.0.0` release path. | The release is peer reviewed. |
+| OICO has a stable release path | `v1.1.0` tag, release archive, clean-room audit, CI | Verified internally | The repository has a reproducible `v1.1.0` release path. | The release is peer reviewed. |
 | OICO has a flagship empirical case | Frozen EOIR workload snapshot, transformation log, output table, figure | Verified as a frozen artifact | The flagship case describes EOIR pending workload relative to recorded completions. | OICO proves institutional failure. |
 | EOIR pending workload increased in the authoritative window | 2016-2024 rows in frozen snapshot | Descriptive | Pending matters increased 4.749-fold from 2016 to the 2024 peak in the frozen snapshot. | The institution lost capacity. |
 | QAI stayed positive in the authoritative window | Eight computed transitions, 2017-2024 | Descriptive | QAI was positive in all eight comparable transitions. | QAI is a validated measure of capacity. |

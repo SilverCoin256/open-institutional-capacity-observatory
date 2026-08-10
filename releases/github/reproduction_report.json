@@ -64,5 +64,116 @@
     "missing_required_paths": [],
     "status": "pass"
   },
-  "version": "1.0.0"
+  "study1": {
+    "artifacts": {
+      "queue_series": "research/outputs/study1_queue_series.csv"
+    },
+    "cross_institution_result": "QAI and conventional backlog-growth signals agree in direction within the queue panels, but unlike units, frequencies, and constructs prevent a pooled cross-institution ranking.",
+    "data": {
+      "institutions": [
+        "EOIR",
+        "USCIS",
+        "CFPB",
+        "SEC"
+      ],
+      "observation_counts": {
+        "CFPB_months": 168,
+        "EOIR_authoritative_periods": 9,
+        "SEC_years": 19,
+        "USCIS_periods": 12
+      },
+      "source_files": [
+        "datasets/raw/eoir_annual.csv",
+        "datasets/raw/uscis_quarterly.csv",
+        "datasets/raw/cfpb_monthly.csv",
+        "datasets/raw/sec_yearly.csv"
+      ],
+      "unit_warning": "The systems are not pooled into one comparable index; each is analyzed within its own reporting unit."
+    },
+    "external_outcome_validation": "Not available in the frozen package. No independent wait-time, case-age, staffing, or service-outcome series is linked to the same observations.",
+    "falsification_boundary": "The framework fails as a general capacity measure if an independently recovered panel shows that the signals do not correspond to observable processing deterioration, or if reporting-definition changes explain the patterns.",
+    "method": {
+      "indicator_baselines": [
+        "volume",
+        "operational rate",
+        "substantive rate",
+        "review intensity",
+        "response intensity"
+      ],
+      "queue_baselines": [
+        "absolute pending change",
+        "percentage backlog growth",
+        "clearance ratio",
+        "backlog/completions",
+        "QAI"
+      ],
+      "tests": [
+        "sign agreement",
+        "Pearson association within series",
+        "leave-one-transition-out EOIR sensitivity",
+        "trend slope"
+      ],
+      "uncertainty": "No inferential confidence interval is reported for the small aggregate queue panels; correlations are descriptive and not causal."
+    },
+    "primary_contribution": "A transparent comparative measurement workflow that demonstrates both signal agreement and the limits of pooling unlike administrative traces.",
+    "research_question": "Do standardized workload signals reveal consistent processing pressure within multiple public administrative systems beyond the information in simpler conventional measures?",
+    "results": {
+      "CFPB": {
+        "annual_n": 14,
+        "annual_volume_vs_operational_rate_r": 0.356995,
+        "annual_volume_vs_substantive_rate_r": 0.690828,
+        "limitation": "Complaint volume is demand/reporting activity, not a representative measure of institutional workload or service quality.",
+        "monthly_n": 168,
+        "source": "datasets/raw/cfpb_monthly.csv",
+        "volume_slope_per_month": 1766.889692,
+        "volume_vs_operational_rate_r": 0.279505,
+        "volume_vs_substantive_rate_r": 0.650484
+      },
+      "EOIR": {
+        "comparable_transitions": 8,
+        "first_pending": 826488.0,
+        "institution": "EOIR",
+        "last_pending": 3925351.0,
+        "limitation": "Aggregate queue counts; no direct waiting-time or capacity ground truth.",
+        "periods": 9,
+        "positive_qai_transitions": 8,
+        "qai_max": 1.579835,
+        "qai_mean": 1.095125,
+        "qai_min": 0.678075,
+        "qai_population_sd": 0.302332,
+        "qai_vs_backlog_growth_r": 0.748307,
+        "qai_vs_clearance_ratio_r": 0.206272,
+        "source": "datasets/raw/eoir_annual.csv"
+      },
+      "SEC": {
+        "limitation": "Filing counts and correspondence are not a complete measure of regulatory workload or substantive oversight.",
+        "n": 19,
+        "period_end": "2024",
+        "period_start": "2006",
+        "source": "datasets/raw/sec_yearly.csv",
+        "volume_slope_per_year": -192.870175,
+        "volume_vs_response_intensity_r": -0.097657,
+        "volume_vs_review_intensity_r": 0.841144
+      },
+      "USCIS": {
+        "comparable_transitions": 11,
+        "first_pending": 5691832.0,
+        "institution": "USCIS",
+        "last_pending": 6033200.0,
+        "limitation": "Aggregate queue counts; no direct waiting-time or capacity ground truth.",
+        "periods": 12,
+        "positive_qai_transitions": 11,
+        "qai_max": 0.017869,
+        "qai_mean": 0.016438,
+        "qai_min": 0.006886,
+        "qai_population_sd": 0.003037,
+        "qai_vs_backlog_growth_r": 0.984378,
+        "qai_vs_clearance_ratio_r": -0.563575,
+        "source": "datasets/raw/uscis_quarterly.csv"
+      }
+    },
+    "status": "exploratory_descriptive",
+    "study": "OICO Study 1"
+  },
+  "version": "1.1.0"
 }
