@@ -54,6 +54,7 @@ jobs:
         run: |
           mkdir -p _site/assets
           cp website/*.html website/*.css _site/
+          cp -R website/reproduce _site/reproduce
           cp figures/gallery/qai_eoir.svg _site/assets/
           cp figures/gallery/FIGURE_MANIFEST.md _site/assets/
           cp README.md _site/README.md
