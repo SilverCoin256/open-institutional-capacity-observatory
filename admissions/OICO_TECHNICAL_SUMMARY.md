@@ -1,0 +1,5 @@
+# Technical Summary
+
+OICO is a Python 3.10+ package with no runtime dependencies. The repository contains a CLI, typed metric functions, frozen raw and processed data, source metadata, checksum manifests, deterministic figures, notebooks, benchmark pilots, unit/data/integration/reproduction tests, GitHub Actions, and release audit scripts. The flagship pipeline recomputes QAI from adjacent pending counts and current completions, retains inherited rounded values for audit, writes machine-readable outputs, and records known misuse. The current release path passes 25 tests, 91% overall coverage, five notebook executions, multi-version CI, and a clean-room source-distribution audit.
+
+The software status is stronger than the empirical generalization. QAI is stable as a descriptive flow metric; ASI is beta; SEDI, Authorization Saturation, and Procedural Capacity remain experimental. The EOIR source is a frozen inherited snapshot with an unrecoverable retrieval timestamp, so FY2025/FY2026 are excluded from the authoritative inference. No DOI, PyPI package, independent reproduction, or external adoption is claimed.

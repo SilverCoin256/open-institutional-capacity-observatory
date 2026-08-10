@@ -1,0 +1,3 @@
+# 30-Second Pitch Draft
+
+Public agencies publish counts of work received, completed, and still pending, but those numbers are rarely packaged so another researcher can audit the full path from source to claim. I built OICO, an open Python research package that freezes public snapshots, records provenance, recomputes transparent indicators, and generates reproducible figures and benchmarks. In its EOIR case, pending matters rose 4.749-fold from FY2016 to FY2024 and the descriptive backlog-change signal stayed positive across all eight comparable transitions. The result is not a claim of failure or causality. It is a reusable measurement and replication contract now open for independent validation.

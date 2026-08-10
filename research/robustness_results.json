@@ -1,0 +1,45 @@
+{
+  "analysis_date": "2026-08-10",
+  "dataset": "datasets/raw/eoir_annual.csv",
+  "authoritative_window": {
+    "first_period": "2016",
+    "last_period": "2024",
+    "reason": "The FY2025 and FY2026 rows are outside a complete, independently recoverable observation window as of the audit date. They remain in the frozen v1 snapshot for provenance, but are excluded from the flagship inference."
+  },
+  "n_periods": 9,
+  "n_comparable_transitions": 8,
+  "qai_definition": "(pending_t - pending_t_minus_1) / completed_t",
+  "primary_result": {
+    "pending_first": 826488,
+    "pending_peak": 3925351,
+    "pending_peak_period": "2024",
+    "pending_multiple": 4.749435,
+    "positive_qai_periods": 8,
+    "qai_mean": 1.095125,
+    "qai_population_sd": 0.302332,
+    "qai_peak": 1.579835,
+    "qai_peak_period": "2024"
+  },
+  "baselines": {
+    "raw_pending_change_positive_periods": 8,
+    "prior_pending_normalization_positive_periods": 8,
+    "prior_pending_normalization_pearson_r_with_qai": 0.893965,
+    "average_pending_normalization_positive_periods": 8,
+    "average_pending_normalization_pearson_r_with_qai": 0.910023,
+    "current_plus_previous_completions_normalization_positive_periods": 8,
+    "current_plus_previous_completions_normalization_pearson_r_with_qai": 0.942698,
+    "interpretation": "All denominator variants preserve the sign pattern in the authoritative window. The high correlations show that QAI is a closely related descriptive normalization, not an independent construct validation."
+  },
+  "leave_one_transition_out": {
+    "mean_range": [0.727432, 1.095125],
+    "positive_periods_range": [7, 8],
+    "interpretation": "The positive pattern does not depend on one transition, although the small sample prevents reliable uncertainty estimation or generalization."
+  },
+  "negative_checks": [
+    "No causal estimate was attempted.",
+    "No staffing or service-quality variable was available for validation.",
+    "No external reproduction was available.",
+    "No claim was made that later negative rows demonstrate resolution.",
+    "No ranking or leaderboard claim was made from the small v1 benchmarks."
+  ]
+}

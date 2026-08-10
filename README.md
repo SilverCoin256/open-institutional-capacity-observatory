@@ -32,6 +32,8 @@ The exact inputs, transformations, output table, figure, interpretation, and lim
 
 The status hierarchy is intentional. OICO does not promote a formal model to an empirical measure merely because it is mathematically convenient. See [metric status and boundaries](docs/METRIC_STATUS.md).
 
+The final scientific audit is equally explicit: QAI is a transparent normalized backlog-change signal, not claimed as new mathematics or a direct measure of institutional capacity. The authoritative EOIR interpretation uses FY2016-FY2024; later frozen rows are retained for audit but excluded from the primary inference because their provenance is not independently recoverable. See the [claims ledger](CLAIMS_LEDGER.md), [robustness audit](docs/research/EMPIRICAL_ROBUSTNESS.md), and [final research audit](docs/research/FINAL_RESEARCH_AUDIT.md).
+
 ## Data and Reproducibility
 
 The release uses frozen source snapshots and derived metadata for EOIR, USCIS, CFPB, SEC, and an accountability-document corpus. Each source has a provenance record, checksum, transformation note, and redistribution decision in [the source register](datasets/metadata/source_register.csv) and [the license review](datasets/metadata/license_review.md). The data package does not redistribute linked third-party policy documents.

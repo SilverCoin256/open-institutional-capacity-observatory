@@ -13,6 +13,7 @@ This document records evidence that cannot be honestly created by the repository
 - PyPI/TestPyPI publication: none verified.
 - Researcher outreach: 60 relevant targets are recorded in a private local operations register; zero messages are counted because no authenticated scholarly sender identity was available.
 - Monitoring: a bounded public-API monitor is installed locally; monitoring is infrastructure, not external evidence.
+- Final scientific decision: freeze the current scope and wait for independent validation; feature expansion is not a substitute for evidence.
 
 ## Evidence rules
 
