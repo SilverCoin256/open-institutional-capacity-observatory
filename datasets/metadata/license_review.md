@@ -1,6 +1,6 @@
 # Source License And Redistribution Review
 
-Review date: 2026-06-30
+Review date: 2026-08-10
 
 Scope: the six frozen raw CSV snapshots and their OICO-derived tables. This is a
 research-data curation record, not legal advice. It does not authorize use of agency
@@ -17,7 +17,9 @@ seals, logos, trademarks, or third-party material embedded in an agency page.
 
 ## Deposit Decision
 
-The v1 archive may redistribute the six CSV snapshots under the determinations above.
-Before a DOI-bearing deposit, the depositor should re-open each official policy link,
-record the access date in the repository release checklist, and confirm that no raw file
-contains agency marks or identified third-party expressive content.
+The v1 archive may redistribute the six stored CSV snapshots under the determinations
+above, with the stated exclusions and attribution. The source register records that the
+original snapshot retrieval dates are not recoverable. Before a DOI-bearing deposit,
+the depositor must re-open each official policy link, confirm the current terms, and
+confirm that no raw file contains agency marks or identified third-party expressive
+content. This is a documented curation decision, not legal advice.
