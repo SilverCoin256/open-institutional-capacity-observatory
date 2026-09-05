@@ -1,6 +1,6 @@
-# OICO v1.1.0 Release Checklist
+# OICO v1.1.1 Release Checklist
 
-Review date: 2026-08-10
+Review date: 2026-09-04
 
 ## Technical-stability gate
 

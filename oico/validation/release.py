@@ -76,8 +76,14 @@ REQUIRED_PATHS = [
 ]
 
 
-def audit_release() -> dict[str, object]:
-    missing = [path for path in REQUIRED_PATHS if not (ROOT / path).exists()]
+def audit_release(include_release_artifacts: bool = True) -> dict[str, object]:
+    release_artifacts = {
+        "releases/artifact_manifest.json",
+        f"releases/github/oico-{__version__}.tar.gz",
+        f"releases/github/oico-{__version__}.tar.gz.sha256",
+    }
+    required_paths = [path for path in REQUIRED_PATHS if include_release_artifacts or path not in release_artifacts]
+    missing = [path for path in required_paths if not (ROOT / path).exists()]
     manifest_path = ROOT / "datasets" / "manifests" / "dataset_manifest.json"
     checksum_issues: list[str] = []
     if manifest_path.exists():
@@ -91,7 +97,7 @@ def audit_release() -> dict[str, object]:
     else:
         checksum_issues.append("missing dataset_manifest.json")
     artifact_manifest_path = ROOT / "releases" / "artifact_manifest.json"
-    if artifact_manifest_path.exists():
+    if include_release_artifacts and artifact_manifest_path.exists():
         artifact_manifest = read_json(artifact_manifest_path)
         for item in artifact_manifest.get("artifacts", []):
             path = ROOT / item["path"]
@@ -99,7 +105,7 @@ def audit_release() -> dict[str, object]:
                 checksum_issues.append(f"artifact path missing: {item['path']}")
             elif sha256(path) != item["sha256"]:
                 checksum_issues.append(f"artifact checksum mismatch: {item['path']}")
-    else:
+    elif include_release_artifacts:
         checksum_issues.append("missing artifact_manifest.json")
     report = {
         "status": "pass" if not missing and not checksum_issues else "fail",

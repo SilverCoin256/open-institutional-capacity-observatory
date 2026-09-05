@@ -23,6 +23,9 @@ jobs:
         run: coverage run -m unittest discover -s tests && coverage report
       - name: Validate data and reproduction
         run: python -m oico.cli.main reproduce
+      - name: Validate full Study 1 reproduction
+        if: matrix.python-version == '3.12'
+        run: python -m oico.cli.main reproduce --full
       - name: Build distributions
         run: python -m build
       - name: Check package metadata

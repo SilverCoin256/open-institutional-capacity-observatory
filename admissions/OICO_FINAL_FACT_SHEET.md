@@ -1,6 +1,6 @@
 # OICO Final Fact Sheet
 
-As of 2026-08-10.
+As of 2026-09-04.
 
 ## What it is
 
@@ -9,11 +9,11 @@ OICO is open research software for measuring observable administrative workload 
 ## What exists
 
 - Public GitHub repository and static research website.
-- Stable `v1.1.0` release path.
+- Final frozen `v1.1.1` release path.
 - Python package and CLI with no runtime dependencies.
 - Frozen datasets with checksums, schemas, source register, license notes, and transformation log.
 - EOIR flagship case, executable notebooks, tests, figures, benchmark pilots, and replication instructions.
-- 25 passing tests, 91% overall coverage, five executable notebooks, and clean-room release checks.
+- 25 passing tests, five executable notebooks, and clean-room release checks.
 
 ## Main result
 

@@ -24,7 +24,7 @@ This additionally runs the exploratory cross-institution Study 1 analysis. Study
 
 ## Provenance
 
-Inputs are listed in `datasets/metadata/source_register.csv`. The dataset manifest and SHA-256 file record source snapshots and processed outputs. `datasets/metadata/transformation_log.md` describes the raw-to-processed transformations. The license review records redistribution scope and unresolved source-specific caveats.
+Inputs are listed in `datasets/metadata/source_register.csv`. The dataset manifest and SHA-256 file record source snapshots and processed outputs. `datasets/metadata/transformation_log.md` describes the raw-to-processed transformations. The license review records redistribution scope and unresolved source-specific caveats. For EOIR, `datasets/metadata/eoir_snapshot_provenance.md` distinguishes the 11-row frozen artifact window from the FY2016-FY2024 authoritative Study 1 inference window and records why the live official publication may differ.
 
 ## Determinism
 

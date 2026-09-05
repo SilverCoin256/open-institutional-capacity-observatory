@@ -6,7 +6,7 @@ OICO is built around one careful question: when decision volume grows faster tha
 
 ## Flagship Case
 
-The first reproducible case studies annual workload observations from the U.S. Executive Office for Immigration Review. In the frozen snapshot, pending matters rose from 826,488 in 2016 to a peak of 3,925,351 in 2024. The Queue Acceleration Index (QAI) was positive in all eight comparable annual periods from 2017 through 2024 and reached 1.580 in 2024. This is evidence of backlog growth relative to recorded completions in the snapshot. It is not evidence of staffing failure, causality, legal noncompliance, or institutional intent.
+The first reproducible case studies annual workload observations from the U.S. Executive Office for Immigration Review. OICO preserves an 11-row frozen artifact window, while the authoritative Study 1 inference uses only FY2016-FY2024: 9 annual observations and 8 transitions. In that frozen historical state, pending matters rose from 826,488 in 2016 to a peak of 3,925,351 in 2024. The Queue Acceleration Index (QAI) was positive in all eight comparable annual periods from 2017 through 2024 and reached 1.580 in 2024. This is evidence of backlog growth relative to recorded completions in the preserved snapshot. It is not evidence of staffing failure, causality, legal noncompliance, or institutional intent. EOIR revises published statistics; the preserved source and its provenance note are therefore part of the reproducibility contract.
 
 ![EOIR Queue Acceleration Index](figures/gallery/qai_eoir.svg)
 
@@ -34,7 +34,7 @@ The exact inputs, transformations, output table, figure, interpretation, and lim
 
 The status hierarchy is intentional. OICO does not promote a formal model to an empirical measure merely because it is mathematically convenient. See [metric status and boundaries](docs/METRIC_STATUS.md).
 
-The final scientific audit is equally explicit: QAI is a transparent normalized backlog-change signal, not claimed as new mathematics or a direct measure of institutional capacity. The authoritative EOIR interpretation uses FY2016-FY2024; later frozen rows are retained for audit but excluded from the primary inference because their provenance is not independently recoverable. See the [claims ledger](CLAIMS_LEDGER.md), [Study 1 results](docs/research/STUDY1_RESULTS.md), and [ultimate final report](docs/research/ULTIMATE_FINAL_REPORT.md). The earlier [research audit](docs/research/FINAL_RESEARCH_AUDIT.md) remains as the historical v1.0.0 audit record.
+The final scientific audit is equally explicit: QAI is a transparent normalized backlog-change signal, not claimed as new mathematics or a direct measure of institutional capacity. The authoritative EOIR interpretation uses FY2016-FY2024; all 11 frozen rows remain in the artifact window, but FY2025 and FY2026 are excluded from the primary inference. See the [EOIR provenance note](datasets/metadata/eoir_snapshot_provenance.md), [claims ledger](CLAIMS_LEDGER.md), [Study 1 results](docs/research/STUDY1_RESULTS.md), and [ultimate final report](docs/research/ULTIMATE_FINAL_REPORT.md). The earlier [research audit](docs/research/FINAL_RESEARCH_AUDIT.md) remains as the historical v1.0.0 audit record.
 
 ## Data and Reproducibility
 

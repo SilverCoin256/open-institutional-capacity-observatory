@@ -8,43 +8,47 @@ import subprocess
 import sys
 
 from oico import __version__
-from oico.benchmarks import run_all_benchmarks
 from oico.config import load_config
-from oico.datasets import build_all
-from oico.flagship import run_flagship
 from oico.io import ROOT, read_csv, sha256, write_json
 from oico.logging_utils import configure_logging
 from oico.metrics.qai import queue_acceleration_index
-from oico.validation import audit_release
-from oico.visualization import make_all_figures
-from research.study1_analysis import run_study1
 
 
 def cmd_build_data(_: argparse.Namespace) -> int:
+    from oico.datasets import build_all
+
     result = build_all()
     print(json.dumps(result, indent=2, sort_keys=True))
     return 0 if result["status"] == "pass" else 1
 
 
 def cmd_validate_data(_: argparse.Namespace) -> int:
+    from oico.datasets import build_all
+
     result = build_all()
     print(json.dumps(result, indent=2, sort_keys=True))
     return 0 if result["status"] == "pass" else 1
 
 
 def cmd_make_figures(_: argparse.Namespace) -> int:
+    from oico.visualization import make_all_figures
+
     paths = make_all_figures()
     print(json.dumps({"figures": [str(path.relative_to(ROOT)) for path in paths]}, indent=2))
     return 0
 
 
 def cmd_run_benchmarks(_: argparse.Namespace) -> int:
+    from oico.benchmarks import run_all_benchmarks
+
     results = run_all_benchmarks()
     print(json.dumps({"results": results}, indent=2, sort_keys=True))
     return 0
 
 
 def cmd_run_flagship(_: argparse.Namespace) -> int:
+    from oico.flagship import run_flagship
+
     result = run_flagship()
     print(json.dumps(result, indent=2, sort_keys=True))
     return 0
@@ -98,6 +102,12 @@ def write_reproduction_manifest(report: dict[str, object]) -> None:
 
 
 def cmd_reproduce(args: argparse.Namespace) -> int:
+    from oico.datasets import build_all
+    from oico.flagship import run_flagship
+    from oico.validation import audit_release
+    from oico.visualization import make_all_figures
+    from research.study1_analysis import run_study1
+
     validation = build_all()
     figures = make_all_figures()
     benchmarks = run_all_benchmarks()
@@ -112,17 +122,15 @@ def cmd_reproduce(args: argparse.Namespace) -> int:
         "study1": study1,
         "release_audit": {"status": "pending"},
     }
+    preflight = audit_release(include_release_artifacts=False)
+    if preflight["status"] != "pass":
+        print(json.dumps({"version": __version__, "release_audit": preflight}, indent=2, sort_keys=True))
+        return 1
+    payload["release_audit"] = {"status": "pass", "scope": "preflight; final archive audit is written separately"}
     write_json(ROOT / "releases" / "github" / "reproduction_report.json", payload)
     write_reproduction_manifest(payload)
     package_release()
     release = audit_release()
-    payload["release_audit"] = release
-    write_json(ROOT / "releases" / "github" / "reproduction_report.json", payload)
-    write_reproduction_manifest(payload)
-    package_release()
-    release = audit_release()
-    payload["release_audit"] = release
-    write_json(ROOT / "releases" / "github" / "reproduction_report.json", payload)
     print(json.dumps(payload, indent=2, sort_keys=True))
     return 0 if validation["status"] == "pass" and release["status"] == "pass" else 1
 

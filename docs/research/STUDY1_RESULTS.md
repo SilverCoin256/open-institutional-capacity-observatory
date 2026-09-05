@@ -8,6 +8,8 @@ Do standardized workload signals reveal consistent processing pressure within mu
 
 ## Data
 
+EOIR has two deliberate windows: the frozen artifact window contains all 11 stored rows (FY2016-FY2026 Second Quarter), while the authoritative inference window is FY2016-FY2024 (9 observations, 8 transitions). The later rows are preserved for reproducibility and audit but are excluded from the primary EOIR claim. See [`eoir_snapshot_provenance.md`](../../datasets/metadata/eoir_snapshot_provenance.md).
+
 | System | Frequency | N | Primary variables |
 |---|---|---:|---|
 | EOIR | annual | 9 authoritative periods | pending, received, completions |

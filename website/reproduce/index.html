@@ -13,13 +13,13 @@
   <main>
     <p class="eyebrow">Independent reproduction</p>
     <h1>Reproduce the flagship result</h1>
-    <p class="lede">The v1.1.0 protocol rebuilds the tracked EOIR outputs, verifies the frozen inputs, and writes a machine-readable report. Add <code>--full</code> to run the comparative Study 1 layer. It is designed for a clean checkout rather than a trusted local state.</p>
+    <p class="lede">The final v1.1.1 protocol rebuilds the tracked EOIR outputs, verifies the frozen inputs, and writes a machine-readable report. Use <code>oico reproduce --full</code> to run the comparative Study 1 layer. It is designed for a clean checkout rather than a trusted local state.</p>
     <section>
       <h2>Three commands after environment setup</h2>
       <pre><code>python -m pip install -e .
-oico reproduce
+oico reproduce --full
 python -m unittest discover -s tests</code></pre>
-      <p>Expected runtime is short on a current laptop. The reproduction command writes <code>examples/flagship/outputs/flagship_report.json</code> and the canonical EOIR table and figure.</p>
+      <p>Expected runtime is short on a current laptop. The full reproduction writes the flagship report, Study 1 outputs, canonical EOIR table, and figures.</p>
     </section>
     <section>
       <h2>What to compare</h2>
@@ -35,6 +35,6 @@ python -m unittest discover -s tests</code></pre>
       <p>Record your release, operating system, Python version, commands, runtime, and output differences. Submit the result through the <a href="https://github.com/SilverCoin256/open-institutional-capacity-observatory/issues/new?template=independent-reproduction.yml">independent reproduction issue form</a>. For substantive objections, see <a href="../break.html">Break OICO</a>.</p>
     </section>
   </main>
-  <footer><span>Open Institutional Capacity Observatory v1.1.0</span><a href="../index.html">Home</a><a href="https://github.com/SilverCoin256/open-institutional-capacity-observatory">GitHub</a></footer>
+  <footer><span>Open Institutional Capacity Observatory v1.1.1</span><a href="../index.html">Home</a><a href="https://github.com/SilverCoin256/open-institutional-capacity-observatory">GitHub</a></footer>
 </body>
 </html>

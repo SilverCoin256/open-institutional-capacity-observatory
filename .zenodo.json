@@ -2,8 +2,8 @@
   "title": "Open Institutional Capacity Observatory",
   "upload_type": "software",
   "publication_date": "2026-08-10",
-  "version": "1.1.0",
-  "description": "Open research software for measuring observable administrative congestion and oversight constraints from reproducible public data. The v1.1.0 release adds a bounded comparative Study 1 while preserving explicit scientific boundaries for descriptive, beta, and experimental modules.",
+  "version": "1.1.1",
+  "description": "Open research software for measuring observable administrative congestion and exploratory indicators of oversight constraints from reproducible public data. The v1.1.1 final release preserves a bounded comparative Study 1 and explicit scientific boundaries for descriptive, beta, and experimental modules.",
   "creators": [
     {
       "name": "Gupta, Shaurya"

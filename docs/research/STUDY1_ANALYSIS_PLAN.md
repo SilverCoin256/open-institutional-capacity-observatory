@@ -8,7 +8,7 @@ Do standardized workload signals reveal consistent processing pressure within mu
 
 ## Scope and units
 
-- EOIR: annual FY2016-FY2024 authoritative window, 9 periods and 8 transitions.
+- EOIR: annual 11-row frozen artifact window, with FY2016-FY2024 as the authoritative inference window (9 periods and 8 transitions). FY2025 and FY2026 remain stored for audit but are excluded from the primary inference.
 - USCIS: quarterly FY2019Q1-FY2021Q4 snapshot, 12 periods and 11 transitions.
 - CFPB: monthly 2012-01 through 2025-12, 168 periods; annual aggregation is descriptive.
 - SEC: annual 2006-2024, 19 periods.
@@ -23,7 +23,7 @@ Do standardized workload signals reveal consistent processing pressure within mu
 
 ## Exclusions
 
-- EOIR FY2025/FY2026 are excluded from the primary window because provenance is unrecoverable and FY2026 is incomplete as of the analysis date.
+- EOIR FY2025/FY2026 are excluded from the primary window because they are later partial/revised publication states and the live EOIR publication is mutable; FY2026 is incomplete in the preserved artifact.
 - Missing completion values do not become zero.
 - Unlike institutions are not ranked or pooled.
 - No causal, predictive, or ground-truth validation claim is planned.

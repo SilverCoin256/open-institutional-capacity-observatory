@@ -1,11 +1,11 @@
 # Transformation Log
 
 Generated at: 2026-08-10T00:00:00+00:00
-OICO version: 1.1.0
+OICO version: 1.1.1
 
 ## Raw Inputs
 
-- `datasets/raw/eoir_annual.csv` -> sha256 `512e19dbfe1d5d0065dfa4320460a188510ba231104868b44d76490f1e1712f1`; Inherited from prior QAI research package and frozen as a v1 reproducibility snapshot.
+- `datasets/raw/eoir_annual.csv` -> sha256 `512e19dbfe1d5d0065dfa4320460a188510ba231104868b44d76490f1e1712f1`; The stored 11-row table is a frozen historical artifact associated with an earlier EOIR publication state. The official workload page and linked PDF are mutable and may revise historical values; the current official publication is documented separately in datasets/metadata/eoir_snapshot_provenance.md.
 - `datasets/raw/uscis_quarterly.csv` -> sha256 `dc51a54a1aad1fb0e9ce20e0e4e17d1eab8388d5376a6fc69bf79a2a962fb14a`; Inherited from prior QAI research package and frozen as a v1 reproducibility snapshot.
 - `datasets/raw/cfpb_monthly.csv` -> sha256 `68b2fbc3d59af567bb4207179d4ffe1ae68a635c5cf2be70209c715aa4de5857`; Inherited from prior oversight-saturation analysis and frozen as a v1 reproducibility snapshot.
 - `datasets/raw/sec_yearly.csv` -> sha256 `7cdec41e31058401c23d291388c4d76c40b02d9cc6bb404618ede81fec6422ac`; Inherited from prior oversight-saturation analysis and frozen as a v1 reproducibility snapshot.

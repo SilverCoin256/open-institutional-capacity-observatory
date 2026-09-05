@@ -12,9 +12,9 @@ Institutions increasingly process and oversee complex decisions. OICO studies wh
 - A reproducible EOIR flagship case with table, figure, report, and limitations.
 - Tests, notebooks, benchmarks, teaching material, a static research site, release artifacts, and a replication protocol.
 
-## Verifiable status as of 2026-08-10
+## Verifiable status as of 2026-09-04
 
-- Public GitHub repository and stable `v1.1.0` tag.
+- Public GitHub repository and final frozen `v1.1.1` tag.
 - Local clean-room reproduction passes.
 - GitHub Actions workflow configured for Python 3.10, 3.11, and 3.12.
 - No DOI, PyPI publication, independent reproduction, named lab use, professor recommendation, course link, published citation, or external conference artifact verified yet.

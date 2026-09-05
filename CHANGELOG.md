@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.1 - 2026-09-04
+
+- Final release: reconciles EOIR frozen-snapshot provenance and separates the 11-row artifact window from the FY2016-FY2024 Study 1 inference window.
+- Synchronizes the independent replication protocol and adds full Study 1 coverage to CI.
+- Disables automatic PyPI publication until a valid Trusted Publisher is configured; no PyPI publication is claimed.
+- Declares OICO frozen for external review after this release.
+
 ## 1.1.0 - 2026-08-10
 
 - Added the dependency-free OICO Study 1 comparative analysis across four frozen public-data systems.
