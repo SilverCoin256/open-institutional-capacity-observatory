@@ -102,6 +102,7 @@ def write_reproduction_manifest(report: dict[str, object]) -> None:
 
 
 def cmd_reproduce(args: argparse.Namespace) -> int:
+    from oico.benchmarks import run_all_benchmarks
     from oico.datasets import build_all
     from oico.flagship import run_flagship
     from oico.validation import audit_release
@@ -136,6 +137,8 @@ def cmd_reproduce(args: argparse.Namespace) -> int:
 
 
 def cmd_audit_release(_: argparse.Namespace) -> int:
+    from oico.validation import audit_release
+
     report = audit_release()
     print(json.dumps(report, indent=2, sort_keys=True))
     return 0 if report["status"] == "pass" else 1
