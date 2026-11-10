@@ -1,8 +1,6 @@
 # Open Institutional Capacity Observatory
 
-OICO is a reproducible public-data platform for measuring institutional capacity, administrative congestion, oversight saturation, and AI-governance accountability.
-
-The v1 stable technical release is deliberately narrow. It contains four public institutional time series and one 23-document AI-governance coding corpus. The purpose is to establish a credible, reproducible foundation that another lab can inspect, teach, extend, and critique.
+OICO is a Python package for analysing public records of administrative work. The v1 release contains four public time series and a 23-document corpus on AI governance. The [immigration court case study](FLAGSHIP_CASE_STUDY.md) shows how to reproduce one measure from the recorded inputs.
 
 ## What Researchers Can Do
 
