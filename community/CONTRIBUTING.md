@@ -36,7 +36,7 @@ Every metric contribution must include:
 1. Open an issue with the proposed change.
 2. Add or update tests and docs.
 3. Run `python scripts/check_release.py`.
-4. Request review from a maintainer.
+4. Request review from a maintainer. For reader-facing changes, ask the reviewer to read the rendered artifact and follow an example or trace a claim to its source. Record what they checked in the pull request.
 
 ## Adoption Claims
 

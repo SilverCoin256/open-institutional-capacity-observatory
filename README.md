@@ -1,16 +1,16 @@
 # Open Institutional Capacity Observatory
 
-Institutions increasingly review, contest, and oversee decisions at a scale that may outgrow their observable administrative capacity. OICO is open research software for measuring traces of that pressure from reproducible public data.
+OICO is a Python package for measuring changes in public-agency backlogs and other records of administrative work. The worked example uses U.S. immigration court data to compare the change in pending cases with the number of cases completed each year.
 
-OICO is built around one careful question: when decision volume grows faster than recorded throughput, what can researchers observe, measure, and reproduce without pretending that a proxy is the institution itself?
+## Immigration court case study
 
-## Flagship Case
+The preserved U.S. Executive Office for Immigration Review (EOIR) snapshot has 11 annual rows. Study 1 uses fiscal years 2016–2024, which give nine annual observations and eight year-to-year changes. Pending matters rose from 826,488 in 2016 to 3,925,351 in 2024.
 
-The first reproducible case studies annual workload observations from the U.S. Executive Office for Immigration Review. OICO preserves an 11-row frozen artifact window, while the authoritative Study 1 inference uses only FY2016-FY2024: 9 annual observations and 8 transitions. In that frozen historical state, pending matters rose from 826,488 in 2016 to a peak of 3,925,351 in 2024. The Queue Acceleration Index (QAI) was positive in all eight comparable annual periods from 2017 through 2024 and reached 1.580 in 2024. This is evidence of backlog growth relative to recorded completions in the preserved snapshot. It is not evidence of staffing failure, causality, legal noncompliance, or institutional intent. EOIR revises published statistics; the preserved source and its provenance note are therefore part of the reproducibility contract.
+The Queue Acceleration Index (QAI) was positive in all eight comparisons. In 2024 it reached 1.580, meaning the backlog grew by 1.580 pending matters for every recorded completion that year. The ratio describes the change in backlog. The data cannot identify its cause or establish staffing failure, legal noncompliance, or institutional intent. EOIR revises its published figures, so the study preserves the input snapshot and [records its provenance](datasets/metadata/eoir_snapshot_provenance.md).
 
 ![EOIR Queue Acceleration Index](figures/gallery/qai_eoir.svg)
 
-Reproduce the case study from a clean checkout with:
+From a clean checkout, run these commands to reproduce the case study.
 
 ```bash
 python -m pip install -e .
@@ -20,7 +20,7 @@ python -m unittest discover -s tests
 
 Run the expanded comparative research layer with `oico reproduce --full`. The Study 1 plan, results, robustness record, and machine-readable outputs are in [`docs/research/`](docs/research/) and [`research/outputs/`](research/outputs/).
 
-The exact inputs, transformations, output table, figure, interpretation, and limitations are in [the flagship case study](docs/FLAGSHIP_CASE_STUDY.md). The one-command workflow writes a machine-readable report to `examples/flagship/outputs/flagship_report.json`.
+The [case study](docs/FLAGSHIP_CASE_STUDY.md) explains how to read the figure and traces it to the source data. `oico reproduce` writes the report to `examples/flagship/outputs/flagship_report.json`.
 
 ## What OICO Measures
 
